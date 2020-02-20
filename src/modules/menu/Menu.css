@@ -1,0 +1,25 @@
+.Menu {
+  text-align: center;
+  background-color: black;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 33%;
+  float: left;
+}
+
+.Menu-logo {
+  height: 10%;
+  max-width: 33%;
+  pointer-events: none;
+  border-style: solid;
+  border-color: black;
+}
+
+.Menu-button {
+  background-color: black;
+  color: white;
+  width: 25%;
+}
