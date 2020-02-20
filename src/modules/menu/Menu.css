@@ -1,24 +1,41 @@
 .Menu {
-  text-align: center;
-  background-color: black;
-  height:100%;
+  float: left;
+  height: 100%;
+  width: 100%;
+  padding-top: 15%;
+  border-right: solid white;
+
   align-items: center;
   justify-content: center;
+  text-align: center;
+
+  background-color: black;
   font-size: calc(10px + 2vmin);
-  color: white;
-  width: 100%;
-  float: left;
+  color: white;  
+  
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
 }
 
 .Menu-logo {
-  height: 10%;
-  max-width: 33%;
+  height: 20%;
+  max-width: 50%;
   pointer-events: none;
   border-style: solid;
   border-color: black;
 }
 
+#mt1 {
+  font-weight: bold;
+  text-decoration: underline solid white;
+}
+
 .Menu-button {
+  display: block;
+  margin:0 auto;
+  margin-top: 5%;
+
   background-color: black;
   color: white;
   width: 25%;
