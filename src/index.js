@@ -5,13 +5,15 @@ import Menu from './modules/menu/Menu';
 import Create from './modules/create/create'
 import * as serviceWorker from './serviceWorker';
 
-function App() {
-    return (
-        <div className="app">
-            <div className="app-menu">{Menu}</div>
-            <div className="app-body">{Create}</div>
-        </div>
-    );
+class App extends React.Component {
+    render() {
+        return (
+            <div className="app">
+                <div className="app-menu"><Menu /></div>
+                <div className="app-body"><Create /></div>
+            </div>
+        )
+    }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
