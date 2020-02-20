@@ -31,6 +31,10 @@
   text-decoration: underline solid white;
 }
 
+#mt2 {
+  padding-bottom: 5%;;
+}
+
 .Menu-button {
   display: block;
   margin:0 auto;
@@ -38,5 +42,7 @@
 
   background-color: black;
   color: white;
-  width: 25%;
+  min-width: auto;
+  width: 33%;
+  max-width: 33%;
 }
