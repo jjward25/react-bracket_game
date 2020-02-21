@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Menu from './modules/menu/Menu';
-import Create from './modules/create/create'
+import Create from './modules/create/newgame'
 import * as serviceWorker from './serviceWorker';
 
 class App extends React.Component {
@@ -16,7 +16,7 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('App'));
 
 
 
