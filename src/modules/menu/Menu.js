@@ -13,13 +13,13 @@ function Menu() {
         Select Game Type
         </p>
       <button className="Menu-button" id="b1">
-        <p id="button">RANDOM</p>
+        <p id="button">CREATE</p>
       </button>
       <button className="Menu-button" id="b2">
-        <p id="button">CHOOSE</p>
+        <p id="button">RANDOM</p>
       </button>
       <button className="Menu-button" id="b3">
-        <p id="button">CREATE</p>
+        <p id="button">CHOOSE</p>
       </button>
 
     </div>
