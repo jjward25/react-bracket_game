@@ -1,4 +1,5 @@
 import React from "react";
+import './form-input.css';
 
 const Input = props => {
     //console.log(props.value);

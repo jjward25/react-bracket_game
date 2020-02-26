@@ -1,13 +1,13 @@
 .Menu {
-  float: left;
-  height: 100%;
-  width: 100%;
-  padding-top: 2%;
-  border-right: solid white;
-
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  height: 100%; 
+    width: 100%;  
+    float: left;
+    display: flex; 
+  
+    text-align: center;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
 
   background-color: black;
   font-size: calc(10px + 2vmin);

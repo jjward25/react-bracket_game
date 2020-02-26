@@ -63,77 +63,83 @@ class Create extends React.Component {
 
     render() {
         return (
-            <form className="container-fluid" onSubmit={this.handleFormSubmit}>
-                <Input
-                    inputType={"text"}
-                    name={"seed1"}
-                    value={this.state.newGame.name}
-                    placeholder={"1 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed2"}
-                    value={this.state.newGame.name}
-                    placeholder={"2 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed3"}
-                    value={this.state.newGame.name}
-                    placeholder={"3 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed4"}
-                    value={this.state.newGame.name}
-                    placeholder={"4 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed5"}
-                    value={this.state.newGame.name}
-                    placeholder={"5 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed6"}
-                    value={this.state.newGame.name}
-                    placeholder={"6 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed7"}
-                    value={this.state.newGame.name}
-                    placeholder={"7 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <Input
-                    inputType={"text"}
-                    name={"seed8"}
-                    value={this.state.newGame.name}
-                    placeholder={"8 Seed"}
-                    handleChange={this.handleInput}
-                />
-                <p>Name Your Category</p>
-                <Input
-                    inputType={"text"}
-                    name={"category"}
-                    value={this.state.newGame.name}
-                    placeholder={"Category"}
-                    handleChange={this.handleInput}
-                />
-                <Button
-                    action={this.handleFormSubmit}
-                    type={"primary"}
-                    title={"Submit"}
-                />
+
+            <form className="form-container" onSubmit={this.handleFormSubmit}>
+                <div className="vertical-center">
+                    <p>Enter Contestants</p>
+                    <Input
+                        inputType={"text"}
+                        name={"seed1"}
+                        value={this.state.newGame.name}
+                        placeholder={"1 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed2"}
+                        value={this.state.newGame.name}
+                        placeholder={"2 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed3"}
+                        value={this.state.newGame.name}
+                        placeholder={"3 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed4"}
+                        value={this.state.newGame.name}
+                        placeholder={"4 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed5"}
+                        value={this.state.newGame.name}
+                        placeholder={"5 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed6"}
+                        value={this.state.newGame.name}
+                        placeholder={"6 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed7"}
+                        value={this.state.newGame.name}
+                        placeholder={"7 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <Input
+                        inputType={"text"}
+                        name={"seed8"}
+                        value={this.state.newGame.name}
+                        placeholder={"8 Seed"}
+                        handleChange={this.handleInput}
+                    />
+                    <p>Name Your Category</p>
+                    <Input
+                        inputType={"text"}
+                        name={"category"}
+                        value={this.state.newGame.name}
+                        placeholder={"Category"}
+                        handleChange={this.handleInput}
+                    />
+                    <Button
+                        action={this.handleFormSubmit}
+                        type={"primary"}
+                        title={"Submit"}
+                    />
+                </div>
             </form>
+
+
         )
     }
 };
