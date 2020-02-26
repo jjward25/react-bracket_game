@@ -1,7 +1,7 @@
 import React from 'react';
 import './form.css';
-import Input from '../components/form-components';
-import Button from '../components/form-components';
+import Input from '../components/form-input';
+import Button from '../components/form-button';
 
 
 
