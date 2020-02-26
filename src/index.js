@@ -4,15 +4,18 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import Menu from './modules/menu/Menu';
-import Create from './modules/create/form';
+import Createdform from './modules/create-form/form';
+import Createdgame from './modules/create-game/cgame';
 
 class App extends React.Component {
     render() {
-
         return (
             <div className="app">
                 <div className="app-menu"><Menu /></div>
-                <div className="app-body"><Create /></div>
+                <div className="app-body">
+                    <Createdform />
+                    <Createdgame />
+                </div>
             </div>
         )
     }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './form.css';
-import Input from '../components/form-input';
-import Button from '../components/form-button';
+import Input from './components/form-input';
+import Button from './components/form-button';
 
 
 
-class Create extends React.Component {
+class Createdform extends React.Component {
     constructor(props) {
         super(props);
 
@@ -61,10 +61,12 @@ class Create extends React.Component {
         });
     }
 
+
     render() {
+
         return (
 
-            <form className="form-container" onSubmit={this.handleFormSubmit}>
+            < form className="form-container" onSubmit={this.handleFormSubmit} >
                 <div className="vertical-center">
                     <p>Enter Contestants</p>
                     <Input
@@ -137,11 +139,12 @@ class Create extends React.Component {
                         title={"Submit"}
                     />
                 </div>
-            </form>
+            </form >
 
 
         )
     }
+
 };
 
-export default Create;
+export default Createdform;

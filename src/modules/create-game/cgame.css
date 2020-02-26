@@ -1,0 +1,14 @@
+.created-game-rd1 {
+    height: 100%; 
+    width: 100%;  
+    float: left;
+    display: flex; 
+  
+    text-align: center;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
