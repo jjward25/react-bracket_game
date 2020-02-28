@@ -11,11 +11,11 @@ class Createdform extends React.Component {
 
         this.state = {
             newGame: {
-                seed1: "",
-                seed2: "",
-                seed3: "",
-                seed4: "",
-                seed5: "",
+                seed1: "1",
+                seed2: "2",
+                seed3: "3",
+                seed4: "4",
+                seed5: "5",
                 seed6: "",
                 seed7: "",
                 seed8: "",
@@ -68,7 +68,7 @@ class Createdform extends React.Component {
 
             < form className="form-container" onSubmit={this.handleFormSubmit} >
                 <div className="vertical-center">
-                    <p>Enter Contestants</p>
+
                     <Input
                         inputType={"text"}
                         name={"seed1"}
