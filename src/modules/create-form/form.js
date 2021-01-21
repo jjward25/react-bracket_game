@@ -5,7 +5,7 @@ import Button from './components/form-button';
 import {Link} from 'react-router-dom';
 import logo from './bracket-transparent.PNG';
 
-function Createdform(props) {
+function Creategame (props) {
     const [state, setState] = useState({
         seed1: undefined,
         seed2: undefined,
@@ -48,6 +48,16 @@ function Createdform(props) {
 
                 <img src={logo} className="menu-logo" alt="logo" />
 
+                <p>Your Category</p>
+                <Input
+                    type="text"
+                    name="category"
+                    value={state.category}
+                    placeholder="Category"
+                    onChange={stateUpdate}
+                    />
+
+                <p>Your Nominees</p>
                 <Input
                     type="text"
                     name="seed1"
@@ -104,14 +114,8 @@ function Createdform(props) {
                     placeholder="Seed 8"
                     onChange={stateUpdate}
                 />
-                <p>Name Your Category</p>
-                <Input
-                    type="text"
-                    name="category"
-                    value={state.category}
-                    placeholder="Category"
-                    onChange={stateUpdate}
-                />
+                
+                
                 <Button
                     action={handleFormSubmit}
                     type={"primary"}
@@ -123,4 +127,4 @@ function Createdform(props) {
 
     )
 };
-export default Createdform;
+export default Creategame;

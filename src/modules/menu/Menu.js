@@ -18,21 +18,19 @@ function Menu() {
           Select Game Type
         </p>
 
-        <Link to="/newgame">
+        <button className="Menu-button" id="b2">
+          <p id="button">RANDOM</p>
+        </button>
+
+        <Link to="/creategame">
         <button className="Menu-button" id="b1">
           <p id="button">CREATE</p>
         </button>
         </Link>
         
-        <button className="Menu-button" id="b2">
-          <p id="button">RANDOM</p>
-        </button>
-        
         <button className="Menu-button" id="b3">
           <p id="button">CHOOSE</p>
-        </button>
-        
-        
+        </button>        
 
       </div>
     </div>

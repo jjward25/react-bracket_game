@@ -4,8 +4,10 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+
 import Menu from './modules/menu/Menu';
-import Createdform from './modules/create-form/form';
+import Creategame from './modules/create-form/form';
+import Roundone from './modules/round-one/roundone';
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
         <div className="app">
             <Switch>
                 <Route path="/" exact component={Menu} />
-                <Route path="/newgame" component ={Createdform}/>
+                <Route path="/creategame" component ={Creategame}/>
+                <Route path="/roundone" component={Roundone}/>
             </Switch>
         </div>
         </Router>
