@@ -2,23 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Menu from './modules/menu/Menu';
 import Createdform from './modules/create-form/form';
-import Createdgame from './modules/create-game/cgame';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div className="app">
-                <div className="app-menu"><Menu /></div>
-                <div className="app-body">
-                    <Createdform />
-                    <Createdgame />
-                </div>
-            </div>
-        )
-    }
+function App() {
+
+    return (
+        <Router>
+        <div className="app">
+            <Switch>
+                <Route path="/" exact component={Menu} />
+                <Route path="/newgame" component ={Createdform}/>
+            </Switch>
+        </div>
+        </Router>
+    )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

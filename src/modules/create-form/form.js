@@ -1,150 +1,126 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './form.css';
 import Input from './components/form-input';
 import Button from './components/form-button';
+import {Link} from 'react-router-dom';
+import logo from './bracket-transparent.PNG';
 
+function Createdform(props) {
+    const [state, setState] = useState({
+        seed1: undefined,
+        seed2: undefined,
+        seed3: undefined,
+        seed4: undefined,
+        seed5: undefined,
+        seed6: undefined,
+        seed7: undefined,
+        seed8: undefined,
+        category: undefined
+    })
 
-
-class Createdform extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            newGame: {
-                seed1: "1",
-                seed2: "2",
-                seed3: "3",
-                seed4: "4",
-                seed5: "5",
-                seed6: "",
-                seed7: "",
-                seed8: "",
-                category: ""
-            },
-
-        };
-
-        this.handleInput = this.handleInput.bind(this);
-        this.handleFormSubmit = this.handleFormSubmit.bind(this);
-
-    }
-
-    handleInput(e) {
-        let value = e.target.value;
-        let name = e.target.name;
-        this.setState(
-            prevState => ({
-                newGame: {
-                    ...prevState.newGame,
-                    [name]: value
-                }
-            }),
-            () => console.log(this.state.newGame)
-        );
-    }
-
-    handleFormSubmit(e) {
+    function stateUpdate(e) {
         e.preventDefault();
-        let gameData = this.state.newGame;
+        const value = e.target.value;
 
-        fetch("http://example.com", {
-            method: "POST",
-            body: JSON.stringify(gameData),
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json"
-            }
-        }).then(response => {
-            response.json().then(data => {
-                console.log("Successful" + data);
-            });
+        setState({
+            ...state,
+            [e.target.name]: value
         });
+
+        console.log({ state })
     }
 
-
-    render() {
-
-        return (
-
-            < form className="form-container" onSubmit={this.handleFormSubmit} >
-                <div className="vertical-center">
-
-                    <Input
-                        inputType={"text"}
-                        name={"seed1"}
-                        value={this.state.newGame.name}
-                        placeholder={"1 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed2"}
-                        value={this.state.newGame.name}
-                        placeholder={"2 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed3"}
-                        value={this.state.newGame.name}
-                        placeholder={"3 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed4"}
-                        value={this.state.newGame.name}
-                        placeholder={"4 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed5"}
-                        value={this.state.newGame.name}
-                        placeholder={"5 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed6"}
-                        value={this.state.newGame.name}
-                        placeholder={"6 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed7"}
-                        value={this.state.newGame.name}
-                        placeholder={"7 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <Input
-                        inputType={"text"}
-                        name={"seed8"}
-                        value={this.state.newGame.name}
-                        placeholder={"8 Seed"}
-                        handleChange={this.handleInput}
-                    />
-                    <p>Name Your Category</p>
-                    <Input
-                        inputType={"text"}
-                        name={"category"}
-                        value={this.state.newGame.name}
-                        placeholder={"Category"}
-                        handleChange={this.handleInput}
-                    />
-                    <Button
-                        action={this.handleFormSubmit}
-                        type={"primary"}
-                        title={"Submit"}
-                    />
-                </div>
-            </form >
-
-
-        )
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        props.onSubmit(state); //tells the onSubmit in Index.js what to pass as "e"
     }
 
+    return (
+
+        <form className="form-container" onSubmit={handleFormSubmit}>
+            <div className="vertical-center">
+
+                <Link to="/">
+                    <p className="title-text">
+                    The Bracket Game
+                    </p>
+                </Link>
+
+                <img src={logo} className="menu-logo" alt="logo" />
+
+                <Input
+                    type="text"
+                    name="seed1"
+                    value={state.seed1}
+                    placeholder="Seed 1"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed2"
+                    value={state.seed2}
+                    placeholder="Seed 2"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed3"
+                    value={state.seed3}
+                    placeholder="Seed 3"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed4"
+                    value={state.seed4}
+                    placeholder="Seed 4"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed5"
+                    value={state.seed5}
+                    placeholder="Seed 5"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed6"
+                    value={state.seed6}
+                    placeholder="Seed 6"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed7"
+                    value={state.seed7}
+                    placeholder="Seed 7"
+                    onChange={stateUpdate}
+                />
+                <Input
+                    type="text"
+                    name="seed8"
+                    value={state.seed8}
+                    placeholder="Seed 8"
+                    onChange={stateUpdate}
+                />
+                <p>Name Your Category</p>
+                <Input
+                    type="text"
+                    name="category"
+                    value={state.category}
+                    placeholder="Category"
+                    onChange={stateUpdate}
+                />
+                <Button
+                    action={handleFormSubmit}
+                    type={"primary"}
+                    title={"Submit"}
+                />
+            </div>
+        </form >
+
+
+    )
 };
-
 export default Createdform;

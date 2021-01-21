@@ -13,3 +13,18 @@
     color: white;
   }
   
+.title-text {
+  font-weight: bold;
+  text-decoration: underline solid white;
+  color: white;
+}
+
+.menu-logo {
+  max-height: 20%;
+  max-width: 50%;
+  width: 25%;
+
+  pointer-events: none;
+  border-style: solid;
+  border-color: black;
+}

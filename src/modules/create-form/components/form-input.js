@@ -2,10 +2,10 @@ import React from "react";
 import './form-input.css';
 
 const Input = props => {
-    //console.log(props.value);
+
     return (
         <div className="form-input">
-            <label for={props.name} className="form-input-label">
+            <label className="form-input-label">
                 {props.title}
             </label>
             <input
