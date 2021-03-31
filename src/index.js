@@ -4,7 +4,6 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
 import Menu from './modules/menu/Menu';
 import Creategame from './modules/create-form/form';
 import Roundone from './modules/round-one/roundone';
@@ -24,7 +23,12 @@ function App() {
     )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<React.StrictMode>
+    <App />
+    </React.StrictMode>,
+document.getElementById('root')
+);
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './bracket-transparent.PNG';
+import logo from '../../images/bracket-transparent.PNG';
 import './Menu.css';
 import {Link} from 'react-router-dom';
 
@@ -18,9 +18,11 @@ function Menu() {
           Select Game Type
         </p>
 
+        <Link to="/roundone">
         <button className="Menu-button" id="b2">
           <p id="button">RANDOM</p>
         </button>
+        </Link>
 
         <Link to="/creategame">
         <button className="Menu-button" id="b1">

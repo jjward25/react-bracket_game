@@ -3,7 +3,7 @@ import './form.css';
 import Input from './components/form-input';
 import Button from './components/form-button';
 import {Link} from 'react-router-dom';
-import logo from './bracket-transparent.PNG';
+import logo from '../../images/bracket-transparent.PNG';
 
 function Creategame (props) {
     const [state, setState] = useState({

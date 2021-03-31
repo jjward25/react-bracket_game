@@ -3,6 +3,7 @@ import './roundone.css';
 import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 
+/* Rendered Component */
 function Roundone() {
     return (
       <div className="Menu">
