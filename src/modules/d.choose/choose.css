@@ -1,0 +1,10 @@
+.choose-game-list {
+    padding-left: 0px;
+    
+}
+
+.choose-game-category-title {
+    margin: 20px; 
+    list-style: none;
+    border-style:outset;
+}

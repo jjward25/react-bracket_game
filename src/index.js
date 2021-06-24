@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Menu from './modules/a.menu/Menu';
 import Creategame from './modules/create-form/form';
 import Random from './modules/b.random/random';
+import Choosegame from './modules/d.choose/choose';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/" exact component={Menu} />
                 <Route path="/creategame" component ={Creategame}/>
                 <Route path="/random" component={Random}/>
+                <Route path="/choose" component={Choosegame}/>
             </Switch>
         </div>
         </Router>

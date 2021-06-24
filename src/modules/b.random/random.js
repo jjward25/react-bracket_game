@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
+import main_game_list from '../../bracket_list.json'
+console.log(main_game_list)
 
 
 

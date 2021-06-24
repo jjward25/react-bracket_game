@@ -30,10 +30,11 @@ function Menu() {
         </button>
         </Link>
 
-                
+        <Link to="/choose">
         <button className="Menu-button" id="b3">
           <p id="button">CHOOSE</p>
         </button>        
+        </Link>               
 
       </div>
     </div>
