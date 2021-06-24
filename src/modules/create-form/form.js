@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import './form.css';
-import Input from './components/form-input';
-import Button from './components/form-button';
+import Input from './form-components/form-input';
+import Button from './form-components/form-button';
 import {Link} from 'react-router-dom';
 import logo from '../../images/bracket-transparent.PNG';
 
 function Creategame (props) {
     const [state, setState] = useState({
-        seed1: undefined,
-        seed2: undefined,
-        seed3: undefined,
-        seed4: undefined,
-        seed5: undefined,
-        seed6: undefined,
-        seed7: undefined,
-        seed8: undefined,
-        category: undefined
+        seed1: props.seed1,
+        seed2: props.seed2,
+        seed3: props.seed3,
+        seed4: props.seed4,
+        seed5: props.seed5,
+        seed6: props.seed6,
+        seed7: props.seed7,
+        seed8: props.seed8,
+        category: props.category
     })
 
     function stateUpdate(e) {
@@ -115,12 +115,10 @@ function Creategame (props) {
                     onChange={stateUpdate}
                 />
                 
-                
-                <Button
-                    action={handleFormSubmit}
-                    type={"primary"}
-                    title={"Submit"}
-                />
+                <Link className="form-submit" to='/creategame-rd1'>
+                    <Button type={"primary"} title={"Begin!"}action={stateUpdate}>
+                    </Button>
+                </Link>
             </div>
         </form >
 

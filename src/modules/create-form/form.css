@@ -29,3 +29,21 @@
   border-style: solid;
   border-color: black;
 }
+
+.form-submit {
+  display: block;
+    margin:0 auto;
+    margin-top: 3%;
+    padding-top: .5%;
+    padding-bottom: 1%;
+    overflow: scroll;
+    max-width: 10%;
+
+    background-color: darkslategrey;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    text-decoration: none;
+    opacity: 50%;
+    
+}
