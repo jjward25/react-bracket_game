@@ -53,7 +53,7 @@ function Creategame (props) {
                     type="text"
                     name="category"
                     value={state.category}
-                    placeholder="Category"
+                    placeholder="Category Name"
                     onChange={stateUpdate}
                     />
 
