@@ -4,9 +4,9 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Menu from './modules/menu/Menu';
+import Menu from './modules/a.menu/Menu';
 import Creategame from './modules/create-form/form';
-import Random from './modules/random/random';
+import Random from './modules/b.random/random';
 
 function App() {
 

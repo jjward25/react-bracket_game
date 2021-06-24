@@ -18,7 +18,7 @@ function Menu() {
           Select Game Type
         </p>
 
-        <Link to="/roundone">
+        <Link to="/random">
         <button className="Menu-button" id="b2">
           <p id="button">RANDOM</p>
         </button>

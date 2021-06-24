@@ -5,21 +5,28 @@ import {Link} from 'react-router-dom';
 
 
 /* Rendered Component */
-function Random() {
-    return (
+function random() {  
+  
+  return (
       <div className="Menu">
         <div className="vertical-center">
+          
           <Link to="/">
             <p className="title-text">
              The Bracket Game
             </p>
           </Link>
+          
           <img src={logo} className="menu-logo" alt="logo" />
+          
           <div className="nominee-title" id="roundone">
             Nominees
-          </div>   
+          </div>
+
         </div>
       </div>
     );
   }
-  export default Random;
+
+export default random;
+
