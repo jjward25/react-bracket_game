@@ -10,7 +10,7 @@ console.log(main_game_list)
 function random() {  
   
   return (
-      <div className="Menu">
+      <div className="menu">
         <div className="vertical-center">
           
           <Link to="/">

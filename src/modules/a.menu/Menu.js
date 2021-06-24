@@ -5,34 +5,34 @@ import {Link} from 'react-router-dom';
 
 function Menu() {
   return (
-    <div className="Menu">
+    <div className="menu">
       <div className="vertical-center">
 
-        <p className="Menu-text" id="mt1">
+        <p className="menu-text" id="mt1">
           The Bracket Game
         </p>
 
         <img src={logo} className="menu-logo" alt="logo" />
 
-        <p className="Menu-text" id="mt2">
+        <p className="menu-text" id="mt2">
           Select Game Type
         </p>
 
         <Link to="/random">
-        <button className="Menu-button" id="b2">
-          <p id="button">RANDOM</p>
+        <button className="menu-button">
+          <p>RANDOM</p>
         </button>
         </Link>
 
         <Link to="/creategame">
-        <button className="Menu-button" id="b1">
-          <p id="button">CREATE</p>
+        <button className="menu-button">
+          <p>CREATE</p>
         </button>
         </Link>
 
         <Link to="/choose">
-        <button className="Menu-button" id="b3">
-          <p id="button">CHOOSE</p>
+        <button className="menu-button">
+          <p>CHOOSE</p>
         </button>        
         </Link>               
 

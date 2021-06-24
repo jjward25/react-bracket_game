@@ -10,7 +10,7 @@ console.log(games)
 
 function Choosegame() {  
 return (
-    <div className="Menu">
+    <div className="menu">
         <div className="vertical-center">
         <Link to="/">
             <p className="title-text">
@@ -20,14 +20,15 @@ return (
           
         <img src={logo} className="menu-logo" alt="logo" />
           
-        <div className="nominee-title" id="mt2">
-            Nominees 
+        <div className="menu-text" id="mt2">
+            Categories 
         </div>
-
+        
         <div>
             <ul className="choose-game-list">
                 {games.main_game_list.map(game => {
-                    return <li className="choose-game-category-title">{game.category}</li>;
+                    let game_path = '/' + game.category.replace(/[^a-zA-Z ]/g, "").toLowerCase().replaceAll(" ","-")
+                    return <Link style= {{ textDecoration: 'none' }} to={game_path}><li className="choose-game-category-title"><p>{game.category.toUpperCase()}</p></li></Link>;
                 })}
             </ul>
         </div>
