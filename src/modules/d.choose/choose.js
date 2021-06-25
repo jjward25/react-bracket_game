@@ -5,9 +5,6 @@ import games from '../../bracket_list.json'
 import './choose.css';
 
 
-console.log(games)
-
-
 function Choosegame() {  
 return (
     <div className="menu">
