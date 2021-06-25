@@ -46,6 +46,7 @@ code {
   background-color: black;
   align-items: center;
   justify-content: center;
+  min-width: 50%;
 
   /*this to solve "the content will not be cut when the window is smaller than the content": */
   max-width:100%;

@@ -1,0 +1,46 @@
+/* Game Section of the Random Page */
+.random-rd1 {
+    padding-left: 0px;
+    margin-right: 0px;
+}
+
+.nom-rd1 {
+    display: grid;
+    grid-template-columns: 10% 80%;
+	grid-template-rows: Auto;
+
+    list-style: none;
+    margin: 20px; 
+    list-style: none;
+    border-style:outset;
+    border-width: .15em;
+    color: white;
+    text-decoration: none;
+    border-radius: 25%;
+
+    background-color: darkslategrey;
+
+}
+
+.nom-rd1:hover {
+    background-color:seagreen;
+}
+
+.nom-rd1::selection {
+    background:seagreen;
+}
+
+#random-rd1-seed {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    border-right: white;
+    border-right-width: 4px;
+    border-right-style:solid;
+    border-radius: 10%;
+}
