@@ -3,6 +3,7 @@ import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 //import main_game_list from '../../bracket_list.json';
 import RandomRd1 from './random-rd1';
+import RandomR1 from './random-r1';
 
 
 /* Rendered Component */
@@ -20,7 +21,7 @@ function random() {
           
           <img src={logo} className="menu-logo" alt="logo" />
 
-          <RandomRd1></RandomRd1>
+          <RandomR1></RandomR1>
 
         </div>
       </div>
