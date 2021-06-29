@@ -44,3 +44,12 @@
     border-right-style:solid;
     border-radius: 10%;
 }
+
+#active {
+    color: red;
+}
+
+#selected {
+    color: greenyellow;
+    font-weight: 900;
+}
