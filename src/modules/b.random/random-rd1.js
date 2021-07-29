@@ -35,7 +35,12 @@ function RandomRd1({ active, setActive, activeList, index: activeListIndex }) {
         setActive([...active]);  // this creates a new array (that's a copy but different).  This makes it so react will re-render.  Updating the state directly does not re-render the state so setActive(active) would not save changes on the page
     };
 
-    const filteredSeeds = randomGame.seeds.filter((seeds, seedIndex) => activeListIndex === 0 || activeList[activeListIndex - 1][seedIndex]);
+    let filteredSeeds = randomGame.seeds;
+
+    for (let i = 1; i <= activeListIndex; i++) {
+        filteredSeeds = filteredSeeds
+            .filter((seeds, seedIndex) => activeList[i - 1][seedIndex]);
+    }
     
     console.log({active, activeList})
     console.log({filteredSeeds})
@@ -52,11 +57,13 @@ function RandomRd1({ active, setActive, activeList, index: activeListIndex }) {
             <div>
                 <ul className="random-rd1">
                     {filteredSeeds.map(({ seed, status }, index) => {
+                        const className = active[index] ? ' active' : ''
                         return  (
-                        <li className={`nom-rd1${active[index] ? ' active' : ''}`} key={seed} onClick={() => (activeListIndex === activeList.length - 1) && handleClick(index)}>
-                            <p id="random-rd1-seed">{seeds[index]}</p>
-                            <p>{seed} {status}</p>
-                        </li>);
+                            <li className={`nom-rd1${className}`} key={seed} onClick={() => (activeListIndex === activeList.length - 1) && handleClick(index)}>
+                                <p id="random-rd1-seed">{seeds[index]}</p>
+                                <p>{seed} {status}</p>
+                            </li>
+                        );
                     })}                
                 </ul>
             </div>

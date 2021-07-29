@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 //import main_game_list from '../../bracket_list.json';
 import RandomRd1 from './random-rd1';
 
-const getList = (index) => Array([8, 4, 2, 1][index]).fill(false);
+const getList = (index) => Array([8, 4, 2, 1][index]).fill(index === 3);
 
 /* Rendered Component */
 function Random() {  
