@@ -1,133 +1,30 @@
 {
     "main_game_list": [
         {
-            "seed1":  {"seed": "Biden","status": "active"},
-            "seed2":  {"seed": "Jonas","status": "active"},
-            "seed3":  {"seed": "Mama","status": "active"},
-            "seed4":  {"seed": "DiMaggio","status": "active"},
-            "seed5":  {"seed": "Pesci","status": "active"},
-            "seed6":  {"seed": "Stalin","status": "active"},
-            "seed7":  {"seed": "Gordon-Levitt","status": "active"},
-            "seed8":  {"seed": "Rogan","status":"active"}
-            ,"category": "Joe's"
+            "category": "Joe's",
+            "seeds": [
+                {"seed": "Biden","status": "active"},
+                {"seed": "Jonas","status": "active"},
+                {"seed": "Mama","status": "active"},
+                {"seed": "DiMaggio","status": "active"},
+                {"seed": "Pesci","status": "active"},
+                {"seed": "Stalin","status": "active"},
+                {"seed": "Gordon-Levitt","status": "active"},
+                {"seed": "Rogan","status":"active"}
+            ]
         },
-        
         {
-            "seed1": {"seed": "Canadian Football League","status": "active"},
-            "seed2":  {"seed": "Professional Bowling Association","status": "active"},
-            "seed3":  {"seed": "Professional Golf Association","status": "active"},
-            "seed4":  {"seed": "NASCAR","status": "active"},
-            "seed5":  {"seed": "US Track & Field","status": "active"},
-            "seed6":  {"seed": "Major Leage Lacrosse","status": "active"},
-            "seed7":  {"seed": "Wheelchair Basketball","status": "active"},
-            "seed8":  {"seed": "Rollerderby","status":"active"},
-            "category": "Pro Sports Leagues"
-        },
-
-        {
-            "seed1":  {"seed": "Jizyah Shorts","status": "active"},
-            "seed2":  {"seed": "Alpha Omega Nickelberry III","status": "active"},
-            "seed3":  {"seed": "Dijonnaise Norman","status": "active"},
-            "seed4":  {"seed": "Pope Thrower","status": "active"},
-            "seed5":  {"seed": "Aphrodite Bodycomb","status": "active"},
-            "seed6":  {"seed": "Forbes Thor Kiddoo","status": "active"},
-            "seed7":  {"seed": "Kobe Buffalomeat","status": "active"},
-            "seed8":  {"seed": "Marmaduke Trbilcock","status":"active"},
-            "category": "Real Legal Name"
-        },
-
-        {
-            "seed1":  {"seed": "Anarchy","status": "active"},
-            "seed2":  {"seed": "Banana Republic","status": "active"},
-            "seed3":  {"seed": "Military Junta","status": "active"},
-            "seed4":  {"seed": "Theocracy","status": "active"},
-            "seed5":  {"seed": "Patriarchy","status": "active"},
-            "seed6":  {"seed": "Hunger Games","status": "active"},
-            "seed7":  {"seed": "Oligarchy","status": "active"},
-            "seed8":  {"seed": "Gordon Ramsey","status":"active"},
-            "category": "System of Government"
-        },
-        
-        {
-            "seed1":  {"seed": "Sears","status": "active"},
-            "seed2":  {"seed": "Spencer''s","status": "active"},
-            "seed3":  {"seed": "Pacsun","status": "active"},
-            "seed4":  {"seed": "Auntie Anne''s","status": "active"},
-            "seed5":  {"seed": "Victoria''s Secret","status": "active"},
-            "seed6":  {"seed": "Hot Topic","status": "active"},
-            "seed7":  {"seed": "GNC","status": "active"},
-            "seed8":  {"seed": "Sephora","status":"active"},
-            "category": "Mall Stores"
-        },
-        
-        {
-            "seed1":  {"seed": "Monopoly","status": "active"},
-            "seed2":  {"seed": "Scrabble","status": "active"},
-            "seed3":  {"seed": "Scattergories","status": "active"},
-            "seed4":  {"seed": "The Game of Life","status": "active"},
-            "seed5":  {"seed": "Cards Against Humanity","status": "active"},
-            "seed6":  {"seed": "Charades","status": "active"},
-            "seed7":  {"seed": "Twister","status": "active"},
-            "seed8":  {"seed": "Jackbox TV","status":"active"},
-            "category": "Game Night Games"
-        },
-        
-        {
-            "seed1":  {"seed": "Road Trip","status": "active"},
-            "seed2":  {"seed": "Cruise","status": "active"},
-            "seed3":  {"seed": "All-Inclusive","status": "active"},
-            "seed4":  {"seed": "Backpacking","status": "active"},
-            "seed5":  {"seed": "Research","status": "active"},
-            "seed6":  {"seed": "Sailing","status": "active"},
-            "seed7":  {"seed": "Business","status": "active"},
-            "seed8":  {"seed": "Holiday","status":"active"},
-            "category": "Types of Travel"
-        },
-        
-        {
-            "seed1":  {"seed": "Out to Get Some Cigarrettes","status": "active"},
-            "seed2":  {"seed": "Hawaii","status": "active"},
-            "seed3":  {"seed": "The Galapagos","status": "active"},
-            "seed4":  {"seed": "Paris","status": "active"},
-            "seed5":  {"seed": "Movie Theater","status": "active"},
-            "seed6":  {"seed": "Gym","status": "active"},
-            "seed7":  {"seed": "Sports Game","status": "active"},
-            "seed8":  {"seed": "Yoga","status":"active"},
-            "category": "Places to Go"
-        },
-        
-        {
-            "seed1":  {"seed": "Classic Rock","status": "active"},
-            "seed2":  {"seed": "EDM","status": "active"},
-            "seed3":  {"seed": "Rap","status": "active"},
-            "seed4":  {"seed": "Classical","status": "active"},
-            "seed5":  {"seed": "90s Alt Rock","status": "active"},
-            "seed6":  {"seed": "Pop","status": "active"},
-            "seed7":  {"seed": "Indy","status": "active"},
-            "seed8":  {"seed": "Other","status":"active"},
-            "category": "Music Genre"
-        },
-
-        {
-            "seed1":  {"seed": "Late Night Drinks","status": "active"},
-            "seed2":  {"seed": "Dinner","status": "active"},
-            "seed3":  {"seed": "Anything if They''re Paying","status": "active"},
-            "seed4":  {"seed": "Coffee","status": "active"},
-            "seed5":  {"seed": "Happy Hour Drinks","status": "active"},
-            "seed6":  {"seed": "Outdoors","status": "active"},
-            "seed7":  {"seed": "With Friends","status": "active"},
-            "seed8":  {"seed": "Zoom","status":"active"},"category": "First Date"
-        },
-
-        {
-            "seed1":  {"seed": "Beer","status": "active"},
-            "seed2":  {"seed": "Wine","status": "active"},
-            "seed3":  {"seed": "Gin","status": "active"},
-            "seed4":  {"seed": "Whiskey","status": "active"},
-            "seed5":  {"seed": "Champagne","status": "active"},
-            "seed6":  {"seed": "Tequila","status": "active"},
-            "seed7":  {"seed": "Rum","status": "active"},
-            "seed8":  {"seed": "Vodka","status":"active"},"category": "Liquor"
+            "category": "Pro Sports Leagues",
+            "seeds": [
+                {"seed": "Canadian Football League","status": "active"},
+                {"seed": "Professional Bowling Association","status": "active"},
+                {"seed": "Professional Golf Association","status": "active"},
+                {"seed": "NASCAR","status": "active"},
+                {"seed": "US Track & Field","status": "active"},
+                {"seed": "Major Leage Lacrosse","status": "active"},
+                {"seed": "Wheelchair Basketball","status": "active"},
+                {"seed": "Rollerderby","status":"active"}
+            ]
         }
     ]   
 }

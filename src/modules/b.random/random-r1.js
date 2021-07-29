@@ -56,9 +56,10 @@ function RandomR1 (props) {
             </div>
 
             <div className="random-rd1" id={state.status1}>
-                <div className="nom-rd1" onClick={() => {if (state.status1 = 'active') {
-                                                                setState({status1:'selected'})
-                                                            } setState({status1: 'active'})}}>
+                <div className="nom-rd1" onClick={() => {
+                    if (state.status1 = 'active') {
+                        setState({status1:'selected'})
+                    } setState({status1: 'active'})}}>
                 <p id="random-rd1-seed">{seeds[0]}</p>
                 <p>{state.nom1}</p>
                 </div>

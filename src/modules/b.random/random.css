@@ -22,6 +22,7 @@
 
 }
 
+.nom-rd1.active,
 .nom-rd1:hover {
     background-color:seagreen;
 }
