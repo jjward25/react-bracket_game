@@ -1,30 +1,104 @@
 {
     "main_game_list": [
-        {
-            "category": "Joe's",
-            "seeds": [
-                {"seed": "Biden","status": "active"},
-                {"seed": "Jonas","status": "active"},
-                {"seed": "Mama","status": "active"},
-                {"seed": "DiMaggio","status": "active"},
-                {"seed": "Pesci","status": "active"},
-                {"seed": "Stalin","status": "active"},
-                {"seed": "Gordon-Levitt","status": "active"},
-                {"seed": "Rogan","status":"active"}
-            ]
-        },
-        {
-            "category": "Pro Sports Leagues",
-            "seeds": [
-                {"seed": "Canadian Football League","status": "active"},
-                {"seed": "Professional Bowling Association","status": "active"},
-                {"seed": "Professional Golf Association","status": "active"},
-                {"seed": "NASCAR","status": "active"},
-                {"seed": "US Track & Field","status": "active"},
-                {"seed": "Major Leage Lacrosse","status": "active"},
-                {"seed": "Wheelchair Basketball","status": "active"},
-                {"seed": "Rollerderby","status":"active"}
-            ]
-        }
+
+        {"category": "Joe's", "seeds": [ {"seed": "Biden","status": "active"},
+            {"seed": "Jonas","status": "active"},
+            {"seed": "Mama","status": "active"},
+            {"seed": "DiMaggio","status": "active"},
+            {"seed": "Pesci","status": "active"},
+            {"seed": "Stalin","status": "active"},
+            {"seed": "BadA$$","status": "active"},
+            {"seed": "Rogan","status": "active"}]},
+
+           {"category": "Pro Sports", "seeds": [ {"seed": "NASCAR","status": "active"},
+            {"seed": "Competitive Eating","status": "active"},
+            {"seed": "Track and Field","status": "active"},
+            {"seed": "Chess","status": "active"},
+            {"seed": "Ping Pong","status": "active"},
+            {"seed": "Fencing","status": "active"},
+            {"seed": "Wheelchair Basketball","status": "active"},
+            {"seed": "Rollerderby","status": "active"}]},
+
+           {"category": "Real Legal Name", "seeds": [ {"seed": "Jizyah Shorts","status": "active"},
+            {"seed": "Alpha Omega Nickelberry III","status": "active"},
+            {"seed": "Dijonnaise Norman","status": "active"},
+            {"seed": "Pope Thrower","status": "active"},
+            {"seed": "Aphrodite Bodycomb","status": "active"},
+            {"seed": "Forbes Thor Kiddoo","status": "active"},
+            {"seed": "Kobe Buffalomeat","status": "active"},
+            {"seed": "Marmaduke Trbilcock","status": "active"}]},
+
+           {"category": "System of Government", "seeds": [ {"seed": "Anarchy","status": "active"},
+            {"seed": "Banana Republic","status": "active"},
+            {"seed": "Military Junta","status": "active"},
+            {"seed": "Theocracy","status": "active"},
+            {"seed": "Patriarchy","status": "active"},
+            {"seed": "Hunger Games","status": "active"},
+            {"seed": "Oligarchy","status": "active"},
+            {"seed": "Gordon Ramsey","status": "active"}]},
+
+           {"category": "Mall Stores", "seeds": [ {"seed": "Sears","status": "active"},
+            {"seed": "Spencer's","status": "active"},
+            {"seed": "Pacsun","status": "active"},
+            {"seed": "Auntie Anne's","status": "active"},
+            {"seed": "The Booths in the Middle","status": "active"},
+            {"seed": "Hot Topic","status": "active"},
+            {"seed": "Massage Chairs","status": "active"},
+            {"seed": "Halloween Pop Ups","status": "active"}]},
+
+           {"category": "Game Night Games", "seeds": [ {"seed": "Monopoly","status": "active"},
+            {"seed": "What Do You Meme","status": "active"},
+            {"seed": "Scattergories","status": "active"},
+            {"seed": "Life","status": "active"},
+            {"seed": "Cards Against Humanity","status": "active"},
+            {"seed": "Charades","status": "active"},
+            {"seed": "Twister","status": "active"},
+            {"seed": "Jackbox TV","status": "active"}]},
+
+           {"category": "Types of Travel", "seeds": [ {"seed": "Road Trip","status": "active"},
+            {"seed": "Cruise","status": "active"},
+            {"seed": "All-Inclusive","status": "active"},
+            {"seed": "Backpacking","status": "active"},
+            {"seed": "Holiday Travel","status": "active"},
+            {"seed": "Sailing","status": "active"},
+            {"seed": "Business","status": "active"},
+            {"seed": "School Trip","status": "active"}]},
+
+           {"category": "Places to Go", "seeds": [ {"seed": "Out to Get Some Cigarrettes","status": "active"},
+            {"seed": "South America","status": "active"},
+            {"seed": "Europe","status": "active"},
+            {"seed": "A Park","status": "active"},
+            {"seed": "Movie Theater","status": "active"},
+            {"seed": "Gym / Yoga","status": "active"},
+            {"seed": "Concert or Sporting Event","status": "active"},
+            {"seed": "For a Walk","status": "active"}]},
+
+           {"category": "Music Genre", "seeds": [ {"seed": "Classic Rock","status": "active"},
+            {"seed": "EDM","status": "active"},
+            {"seed": "Rap","status": "active"},
+            {"seed": "Classical","status": "active"},
+            {"seed": "90s Alt Rock","status": "active"},
+            {"seed": "Pop","status": "active"},
+            {"seed": "R&B or Jazz","status": "active"},
+            {"seed": "Other","status": "active"}]},
+
+           {"category": "First Date", "seeds": [ {"seed": "Late Night Drinks","status": "active"},
+            {"seed": "Dinner","status": "active"},
+            {"seed": "Anything if They're Paying","status": "active"},
+            {"seed": "Coffee","status": "active"},
+            {"seed": "Happy Hour Drinks","status": "active"},
+            {"seed": "Soemthing Outdoors","status": "active"},
+            {"seed": "Something With Friends","status": "active"},
+            {"seed": "Zoom","status": "active"}]},
+
+           {"category": "Type of Drunk", "seeds": [ {"seed": "Beer","status": "active"},
+            {"seed": "Wine","status": "active"},
+            {"seed": "Gin","status": "active"},
+            {"seed": "Whiskey","status": "active"},
+            {"seed": "Champagne","status": "active"},
+            {"seed": "Tequila","status": "active"},
+            {"seed": "Rum","status": "active"},
+            {"seed": "Vodka","status": "active"}]}           
+           
     ]   
 }

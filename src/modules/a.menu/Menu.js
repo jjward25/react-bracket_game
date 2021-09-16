@@ -13,7 +13,7 @@ function Menu() {
         </p>
 
         <img src={logo} className="menu-logo" alt="logo" />
-
+        
         <p className="menu-text" id="mt2">
           Select Game Type
         </p>

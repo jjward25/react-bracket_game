@@ -60,3 +60,12 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.title-text {
+  font-weight: bold;
+  text-decoration: underline solid white;
+  color: white;
+  margin-top: 0%;
+  align-items: center;
+  padding-top: 1em;
+}

@@ -12,13 +12,7 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
-  
-.title-text {
-  font-weight: bold;
-  text-decoration: underline solid white;
-  color: white;
-  margin-top: 0%;
-}
+
 
 .menu-logo {
   max-height: 20%;

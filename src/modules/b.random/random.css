@@ -1,7 +1,50 @@
+.wrapper {
+    max-height: 100%; 
+    max-width: 100%;  
+    height: 100%;
+    width: 100%;
+    float: left;
+    display: flex; 
+    
+    text-align: center;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: black;
+    font-size: calc(10px + 2vmin);
+    color: white;  
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    overflow: auto;
+}
+
+.game-logo{
+    max-width: 25%;
+    pointer-events: none;
+    border-style: solid;
+    border-color: black;
+}
+
+.instructions {
+    color: #91b2c7;
+    font-size: calc(5px + 2vmin);
+}
+
+.game-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Game Section of the Random Page */
 .random-rd1 {
     padding-left: 0px;
     margin-right: 0px;
+    
 }
 
 .nom-rd1 {
@@ -10,7 +53,8 @@
 	grid-template-rows: Auto;
 
     list-style: none;
-    margin: 20px; 
+    margin-bottom: 25px; 
+    margin-right: 25px; 
     list-style: none;
     border-style:outset;
     border-width: .15em;
@@ -18,17 +62,19 @@
     text-decoration: none;
     border-radius: 25%;
 
-    background-color: darkslategrey;
+    background-color:#2d4159;
 
 }
 
 .nom-rd1.active,
 .nom-rd1:hover {
-    background-color:seagreen;
+    background-color:#91b2c7;
+    color: #2d4159;
+    font-weight: 900;
 }
 
 .nom-rd1::selection {
-    background:seagreen;
+    background:#91b2c7;
 }
 
 #random-rd1-seed {
@@ -47,10 +93,10 @@
 }
 
 #active {
-    color: white;
+    border-color: white;
 }
 
-#selected {
-    color: greenyellow;
-    font-weight: 900;
-}
+#mt2 {
+    font-weight: bold;
+    padding-bottom: 2.5%;
+  }
