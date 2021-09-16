@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 import {RandomRd1, categoryTitle} from './random-game';
+import './random.css';
 
 const getList = (index) => Array([8, 4, 2, 1][index]).fill(index === 3);  // creates an array of the length specified by the index position and fills it with false values
 
