@@ -21,21 +21,30 @@ function randomArrayShuffle(SeedList) {
   return SeedList;
 }
 const GameSeeds = randomArrayShuffle(SeedList)
+
 /** Render Function **/
 function NewRandom() { 
 /* handleClick function for updating the chosen winners */
 const [winners,setWinners] = useState(['','','','']);
-function handleClickR1 (nominee,matchup) {
+const [winnerSeeds,setSeeds] = useState(['','','','']);
+const roundOver = ((Object.values(winners).indexOf('') > -1) === false);
+function handleClickR1 (nominee,matchup,seed) {
   const newWinners = winners;
   newWinners[matchup] = nominee;
+  const newSeeds = winnerSeeds;
+  newSeeds[matchup] = seed;
+  console.log(seed)
   setWinners({
     ...winners,
     ...newWinners
   })
-  console.log(winners)
+  setSeeds({
+    ...winnerSeeds,
+    ...newSeeds
+  })
+  console.log(winnerSeeds)
   /* Check if all matchups have a winner selected */
   const roundOver = ((Object.values(winners).indexOf('') > -1) === false);
-  console.log(roundOver)
   if (roundOver) {
     console.log('Round One Complete!')
   }
@@ -59,55 +68,79 @@ return (
         </p>
         
         <div className="nominee-title" id="mt2">
-          Category: {GameName}
+          {GameName}
         </div>
 
-        <div className='game-wrap'>
-          <div className='matchup'>
-            <div className={`game-seed-${(winners[0]===GameSeeds[0])}`} onClick={() => handleClickR1(GameSeeds[0],0)}>
-              <div className='seed-label'>{seeds[0]}</div>
-              <div className='seed-descr'>{GameSeeds[0]}</div>
+        <div className='game-outer-wrap'>
+
+          <div className='game-wrap'>
+            <div className='matchup'>
+              <div className={`game-seed-${(winners[0]===GameSeeds[0])}`} onClick={() => handleClickR1(GameSeeds[0],0,seeds[0])}>
+                <div className='seed-label'>{seeds[0]}</div>
+                <div className='seed-descr'>{GameSeeds[0]}</div>
+              </div>
+              <div className={`game-seed-${(winners[0]===GameSeeds[1])}`} onClick={() => handleClickR1(GameSeeds[1],0,seeds[1])}>
+                <div className='seed-label'>{seeds[1]}</div>
+                <div className='seed-descr'>{GameSeeds[1]}</div>
+              </div>
             </div>
-            <div className={`game-seed-${(winners[0]===GameSeeds[1])}`} onClick={() => handleClickR1(GameSeeds[1],0)}>
-              <div className='seed-label'>{seeds[1]}</div>
-              <div className='seed-descr'>{GameSeeds[1]}</div>
+            <div className='matchup'>
+              <div className={`game-seed-${(winners[1]===GameSeeds[2])}`} onClick={() => handleClickR1(GameSeeds[2],1,seeds[2])}>
+                <div className='seed-label'>{seeds[2]}</div>
+                <div className='seed-descr'>{GameSeeds[2]}</div>
+              </div>
+              <div className={`game-seed-${(winners[1]===GameSeeds[3])}`} onClick={() => handleClickR1(GameSeeds[3],1,seeds[3])}>
+                <div className='seed-label'>{seeds[3]}</div>
+                <div className='seed-descr'>{GameSeeds[3]}</div>
+              </div>
+            </div>
+            <div className='matchup'>
+            <div className={`game-seed-${(winners[2]===GameSeeds[4])}`} onClick={() => handleClickR1(GameSeeds[4],2,seeds[4])}>
+                <div className='seed-label'>{seeds[4]}</div>
+                <div className='seed-descr'>{GameSeeds[4]}</div>
+              </div>
+              <div className={`game-seed-${(winners[2]===GameSeeds[5])}`} onClick={() => handleClickR1(GameSeeds[5],2,seeds[5])}>
+                <div className='seed-label'>{seeds[5]}</div>
+                <div className='seed-descr'>{GameSeeds[5]}</div>
+              </div>
+            </div>
+            <div className='matchup'>
+            <div className={`game-seed-${(winners[3]===GameSeeds[6])}`} onClick={() => handleClickR1(GameSeeds[6],3,seeds[6])}>
+                <div className='seed-label'>{seeds[6]}</div>
+                <div className='seed-descr'>{GameSeeds[6]}</div>
+              </div>
+              <div className={`game-seed-${(winners[3]===GameSeeds[7])}`} onClick={() => handleClickR1(GameSeeds[7],3,seeds[7])}>
+                <div className='seed-label'>{seeds[7]}</div>
+                <div className='seed-descr'>{GameSeeds[7]}</div>
+              </div>
             </div>
           </div>
 
-          <div className='matchup'>
-            <div className={`game-seed-${(winners[1]===GameSeeds[2])}`} onClick={() => handleClickR1(GameSeeds[2],1)}>
-              <div className='seed-label'>{seeds[2]}</div>
-              <div className='seed-descr'>{GameSeeds[2]}</div>
+
+          <div className={`game-wrap-${roundOver}`}>
+            <div className='matchup'>
+              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[0],0,seeds[0])}>
+                <div className='seed-label'>{winnerSeeds[0]}</div>
+                <div className='seed-descr'>{winners[0]}</div>
+              </div>
+              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[1],0,seeds[1])}>
+                <div className='seed-label'>{winnerSeeds[1]}</div>
+                <div className='seed-descr'>{winners[1]}</div>
+              </div>
             </div>
-            <div className={`game-seed-${(winners[1]===GameSeeds[3])}`} onClick={() => handleClickR1(GameSeeds[3],1)}>
-              <div className='seed-label'>{seeds[3]}</div>
-              <div className='seed-descr'>{GameSeeds[3]}</div>
+            <div className='matchup'>
+              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[2],1)}>
+                <div className='seed-label'>{winnerSeeds[2]}</div>
+                <div className='seed-descr'>{winners[2]}</div>
+              </div>
+              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[3],1)}>
+                <div className='seed-label'>{winnerSeeds[3]}</div>
+                <div className='seed-descr'>{winners[3]}</div>
+              </div>
             </div>
           </div>
 
-          <div className='matchup'>
-          <div className={`game-seed-${(winners[2]===GameSeeds[4])}`} onClick={() => handleClickR1(GameSeeds[4],2)}>
-              <div className='seed-label'>{seeds[4]}</div>
-              <div className='seed-descr'>{GameSeeds[4]}</div>
-            </div>
-            <div className={`game-seed-${(winners[2]===GameSeeds[5])}`} onClick={() => handleClickR1(GameSeeds[5],2)}>
-              <div className='seed-label'>{seeds[5]}</div>
-              <div className='seed-descr'>{GameSeeds[5]}</div>
-            </div>
-          </div>
-
-          <div className='matchup'>
-          <div className={`game-seed-${(winners[3]===GameSeeds[6])}`} onClick={() => handleClickR1(GameSeeds[6],3)}>
-              <div className='seed-label'>{seeds[6]}</div>
-              <div className='seed-descr'>{GameSeeds[6]}</div>
-            </div>
-            <div className={`game-seed-${(winners[3]===GameSeeds[7])}`} onClick={() => handleClickR1(GameSeeds[7],3)}>
-              <div className='seed-label'>{seeds[7]}</div>
-              <div className='seed-descr'>{GameSeeds[7]}</div>
-            </div>
-          </div>
         </div>
-
       </div>
     </div>
   );
