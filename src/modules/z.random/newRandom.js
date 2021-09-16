@@ -32,7 +32,15 @@ const winners = {'1':'','2':'','3':'','4':''};
 function handleClick (nominee,pairs) {
   winners[pairs] = nominee
   console.log(winners)
+
+  const roundOver = ((Object.values(winners).indexOf('') > -1) === false);
+  console.log(roundOver)
+  if (roundOver) {
+    console.log('Round One Complete!')
+  }
+  return
 }
+
 
 return (
     <div className="wrapper">
@@ -56,7 +64,7 @@ return (
 
         <div className='game-wrap'>
           <div className='matchup'>
-            <div className={`game-seed`} onClick={() => handleClick(GameSeeds[0],1)}>
+            <div className={`game-seed-${(winners['1']===GameSeeds[0])}`} onClick={() => handleClick(GameSeeds[0],1)}>
               <div className='seed-label'>{seeds[0]}</div>
               <div className='seed-descr'>{GameSeeds[0]}</div>
             </div>
