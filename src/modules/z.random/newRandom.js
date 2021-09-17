@@ -24,7 +24,7 @@ const GameSeeds = randomArrayShuffle(SeedList)
 
 /** Render Function **/
 function NewRandom() { 
-/* handleClick function for updating the chosen winners */
+/* handleClick function for updating the Round One winners */
 const [winners,setWinners] = useState(['','','','']);
 const [winnerSeeds,setSeeds] = useState(['','','','']);
 const roundOver = ((Object.values(winners).indexOf('') > -1) === false);
@@ -51,26 +51,79 @@ function handleClickR1 (nominee,matchup,seed) {
   return
 }
 
-return (
-    <div className="wrapper">
-      <div className="vertical-center">
-        
-        <Link to="/">
-          <p className="title-text">
-            The Bracket Game
-          </p>
-        </Link>
-        
-        <img src={logo} className="game-logo" alt="logo" />
-        
-        <p className='instructions'>
-          Debate the best, or the worst...
-        </p>
-        
-        <div className="nominee-title" id="mt2">
-          {GameName}
-        </div>
+/* handleClick function for updating the Round Two winners */
+const [winnersTwo,setWinnersTwo] = useState(['','']);
+const [winnerSeedsTwo,setSeedsTwo] = useState(['','']);
+const roundOverTwo = ((Object.values(winnersTwo).indexOf('') > -1) === false);
+function handleClickR2 (nominee,matchup,seed) {
+  const newWinnersTwo = winnersTwo;
+  newWinnersTwo[matchup] = nominee;
+  const newSeedsTwo = winnerSeedsTwo;
+  newSeedsTwo[matchup] = seed;
+  console.log(seed)
+  setWinnersTwo({
+    ...winnersTwo,
+    ...newWinnersTwo
+  })
+  setSeedsTwo({
+    ...winnerSeedsTwo,
+    ...newSeedsTwo
+  })
+  console.log(winnerSeedsTwo)
+  /* Check if all matchups have a winner selected */
+  const roundOverTwo = ((Object.values(winnersTwo).indexOf('') > -1) === false);
+  if (roundOverTwo) {
+    console.log('Round Two Complete!')
+  }
+  return
+}
 
+/* handleClick function for updating the Final Round winners */
+const [winnersThree,setWinnersThree] = useState(['']);
+const [winnerSeedsThree,setSeedsThree] = useState(['']);
+
+function handleClickR3 (nominee,matchup,seed) {
+  const newWinnersThree = winnersThree;
+  newWinnersThree[matchup] = nominee;
+  setWinnersThree({
+    ...winnersThree,
+    ...newWinnersThree
+  })
+  const newSeedsThree = newWinnersThree;
+  newSeedsThree[matchup] = seed;
+  setSeedsThree({
+    ...winnerSeedsThree,
+    ...newSeedsThree
+  })
+  /* Check if all matchups have a winner selected */
+  const roundOverThree = ((Object.values(winnersThree).indexOf('') > -1) === false);
+  if (roundOverThree) {
+    console.log('Game Complete!')
+    window.location.reload(false);
+  }
+  return
+}
+
+
+
+return (
+    <div className="game-wrapper">
+      <div className="vertical-center">
+
+        <div className='game-header'>
+          <Link to="/">
+            <p className="title-text">
+              The Bracket Game
+            </p>
+          </Link>
+          <img src={logo} className="game-logo" alt="logo" />
+          <p className='instructions'>
+            Debate the best, or the worst...
+          </p>
+          <div className="nominee-title">
+            {GameName}
+          </div>
+        </div>
         <div className='game-outer-wrap'>
 
           <div className='game-wrap'>
@@ -119,23 +172,37 @@ return (
 
           <div className={`game-wrap-${roundOver}`}>
             <div className='matchup'>
-              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[0],0,seeds[0])}>
+              <div className={`game-seed-${winnersTwo[0]===winners[0]}`} onClick={() => handleClickR2(winners[0],0,winnerSeeds[0])}>
                 <div className='seed-label'>{winnerSeeds[0]}</div>
                 <div className='seed-descr'>{winners[0]}</div>
               </div>
-              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[1],0,seeds[1])}>
+              <div className={`game-seed-${winnersTwo[0]===winners[1]}`} onClick={() => handleClickR2(winners[1],0,winnerSeeds[1])}>
                 <div className='seed-label'>{winnerSeeds[1]}</div>
                 <div className='seed-descr'>{winners[1]}</div>
               </div>
             </div>
             <div className='matchup'>
-              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[2],1)}>
+              <div className={`game-seed-${winnersTwo[1]===winners[2]}`} onClick={() => handleClickR2(winners[2],1,winnerSeeds[2])}>
                 <div className='seed-label'>{winnerSeeds[2]}</div>
                 <div className='seed-descr'>{winners[2]}</div>
               </div>
-              <div className={`game-seed`} onClick={() => handleClickR1(GameSeeds[3],1)}>
+              <div className={`game-seed-${winnersTwo[1]===winners[3]}`} onClick={() => handleClickR2(winners[3],1,winnerSeeds[3])}>
                 <div className='seed-label'>{winnerSeeds[3]}</div>
                 <div className='seed-descr'>{winners[3]}</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className={`game-wrap-${roundOverTwo}`}>
+            <div className='matchup'>
+              <div className={`game-seed-${winnersThree[0]===winnersTwo[0]}`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
+                <div className='seed-label'>{winnerSeedsTwo[0]}</div>
+                <div className='seed-descr'>{winnersTwo[0]}</div>
+              </div>
+              <div className={`game-seed-${winnersThree[0]===winnersTwo[1]}`} onClick={() => handleClickR3(winnersTwo[1],0,winnerSeedsTwo[1])}>
+                <div className='seed-label'>{winnerSeedsTwo[1]}</div>
+                <div className='seed-descr'>{winnersTwo[1]}</div>
               </div>
             </div>
           </div>
