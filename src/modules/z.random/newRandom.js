@@ -107,7 +107,7 @@ function handleClickR3 (nominee,matchup,seed) {
 
 
 return (
-    <div className="game-wrapper">
+    <div className="wrapper">
       <div className="vertical-center">
 
         <div className='game-header'>
