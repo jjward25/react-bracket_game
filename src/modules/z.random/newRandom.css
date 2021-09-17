@@ -91,15 +91,15 @@
     background-color:cornflowerblue;
     border: 1px solid black;
 }
-.seed-descr-false:hover{
-    background-color: cornflowerblue;
-    border: 1px black solid;
-}
 .seed-descr-false{
     color:lightgrey;
     text-align: left;
     font-size: 100%;
     padding-left: 1.5%;
+}
+.seed-descr-false:hover{
+    background-color: cornflowerblue;
+    border: 1px black solid;
 }
 .seed-descr-true{
     background-color: cornflowerblue;
@@ -172,10 +172,14 @@
     background-color:lightgreen;
     border: 1px black solid;
 }
+.seed-descr-3-false{
+    transition:  transform 1s;
+}
 .seed-descr-3-false:hover{
     background-color: lightgreen;
     border: 1px black solid;
     color: black;
+    transform: rotate(360deg);
 }
 .seed-descr-3-true{
     color:lightgrey;
