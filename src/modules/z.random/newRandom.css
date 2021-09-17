@@ -144,7 +144,7 @@
 /************************/
 /*** Mobile Views ***/
 /************************/
-@media only screen and (min-width: 360px) and (max-device-width: 767px) {
+@media only screen and (min-width: 360px) and (max-device-width: 850px) {
     .game-wrap-false{
         width: 100vw;
     }
