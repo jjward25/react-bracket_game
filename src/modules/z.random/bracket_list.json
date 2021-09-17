@@ -1,27 +1,27 @@
 [
-    {
-        "Joe's":["Biden","Jonas","Mama","DiMaggio","Pesci","Stalin","of Nazareth","Rogan"],
+    
+    {"Joe's":["Biden","Jonas","Mama","DiMaggio","Pesci","Stalin","of Nazareth","Rogan"]},
 
-        "Pro Sports":["NASCAR","Competitive Eating","Track and Field","Chess","Ping Pong","Fencing","E-Sports","Rollerderby"],
+    {"Pro Sports":["NASCAR","Competitive Eating","Track and Field","Chess","Ping Pong","Fencing","E-Sports","Rollerderby"]},
 
-        "Government":["Anarchy","Banana Republic","Military Junta","Theocracy","Patriarchy","Hunger Games","Oligarchy","Gordon Ramsey"],
+    {"Government":["Anarchy","Banana Republic","Military Junta","Theocracy","Patriarchy","Hunger Games","Oligarchy","Gordon Ramsey"]},
 
-        "Mall Stores":["Sears","Spencer's","Pacsun","Auntie Anne's","The Booths in the Middle","Hot Topic","Massage Chairs","Halloween Pop Ups"],
-  
-        "Game Night Games":["Monopoly","What Do You Meme","Scattergories","Life","Cards Against Humanity","Charades","Twister","Jackbox TV"],
+    {"Mall Stores":["Sears","Spencer's","Pacsun","Auntie Anne's","The Booths in the Middle","Hot Topic","Massage Chairs","Halloween Pop Ups"]},
 
-        "Types of Travel":["Road Trip","Cruise","All-Inclusive","Camping","Staycation","Sailing","Business Trip","School Trip"],
+    {"Game Night Games":["Monopoly","What Do You Meme","Scattergories","Life","Cards Against Humanity","Charades","Twister","Jackbox TV"]},
 
-        "Music Genre":["Classic Rock","EDM","Mumble Rap","Classical","90s Alt Rock","Pop","Jazz","Christmas"],
+    {"Types of Travel":["Road Trip","Cruise","All-Inclusive","Camping","Staycation","Sailing","Business Trip","School Trip"]},
 
-        "First Date":["Happy Hour Drinks","Dinner","They're Paying","Coffee","Something With Friends","Zoom","Meet at a Park","Museum"],
+    {"Music Genre":["Classic Rock","EDM","Mumble Rap","Classical","90s Alt Rock","Pop","Jazz","Christmas"]},
 
-        "Type of Drunk":["Beer","Wine","Whiskey","Champagne","Tequila","Rum","Vodka","Mixed Drinks"],
+    {"First Date":["Happy Hour Drinks","Dinner","They're Paying","Coffee","Something With Friends","Zoom","Meet at a Park","Museum"]},
 
-        "Pets":["Dogs","Cats","Birds","Lizards","Hamster","Exotic Animal","Raccoon","Rabbit"],
+    {"Type of Drunk":["Beer","Wine","Whiskey","Champagne","Tequila","Rum","Vodka","Mixed Drinks"]},
 
-        "Age":["Elementary School","Middle School","College","High School","Twenties","Middle Age","Old Age","Afterlife"],
+    {"Pets":["Dogs","Cats","Birds","Lizards","Hamster","Exotic Animal","Raccoon","Rabbit"]},
 
-        "Places to Work":["Oil Rig","Foreign Language Country","Deep Sea Fishing Boat","Morgue or Cemetary","Amazon Warehouse","Local Prison","Your Old High School","Foxconn"]
-    }
+    {"Age":["Elementary School","Middle School","College","High School","Twenties","Middle Age","Old Age","Afterlife"]},
+
+    {"Places to Work":["Oil Rig","Foreign Language Country","Deep Sea Fishing Boat","Morgue or Cemetary","Amazon Warehouse","Local Prison","Your Old High School","Foxconn"]}
+    
 ]

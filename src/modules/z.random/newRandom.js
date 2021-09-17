@@ -6,6 +6,7 @@ import './newRandom.css'
 
 /* Variables from the random game and the nominees */
 const RandomGame = games[Math.floor(Math.random() * games.length)]; /*console.log(RandomGame)*/
+console.log(RandomGame)
 const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
 const SeedList = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
 const seeds = ['1','8','4','5','2','7','3','6']
