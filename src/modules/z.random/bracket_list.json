@@ -1,25 +1,27 @@
 [
+    {
+        "Joe's":["Biden","Jonas","Mama","DiMaggio","Pesci","Stalin","of Nazareth","Rogan"],
 
-    {"Joe's":["Biden","Jonas","Mama","DiMaggio","Pesci","Stalin","BadA$$","Rogan"]},
+        "Pro Sports":["NASCAR","Competitive Eating","Track and Field","Chess","Ping Pong","Fencing","E-Sports","Rollerderby"],
 
-    {"Pro Sports":["NASCAR","Competitive Eating","Track and Field","Chess","Ping Pong","Fencing","Wheelchair Basketball","Rollerderby"]},
-    
-    {"Real Legal Name":["Jizyah Shorts","Alpha Omega Nickelberry III","Dijonnaise Norman","Pope Thrower","Aphrodite Bodycomb","Forbes Thor Kiddoo","Kobe Buffalomeat","Marmaduke Trbilcock"]},
+        "Government":["Anarchy","Banana Republic","Military Junta","Theocracy","Patriarchy","Hunger Games","Oligarchy","Gordon Ramsey"],
 
-    {"System of Government":["Anarchy","Banana Republic","Military Junta","Theocracy","Patriarchy","Hunger Games","Oligarchy","Gordon Ramsey"]},
+        "Mall Stores":["Sears","Spencer's","Pacsun","Auntie Anne's","The Booths in the Middle","Hot Topic","Massage Chairs","Halloween Pop Ups"],
+  
+        "Game Night Games":["Monopoly","What Do You Meme","Scattergories","Life","Cards Against Humanity","Charades","Twister","Jackbox TV"],
 
-    {"Mall Stores":["Sears","Spencer's","Pacsun","Auntie Anne's","The Booths in the Middle","Hot Topic","Massage Chairs","Halloween Pop Ups"]},
+        "Types of Travel":["Road Trip","Cruise","All-Inclusive","Camping","Staycation","Sailing","Business Trip","School Trip"],
 
-    {"Game Night Games":["Monopoly","What Do You Meme","Scattergories","Life","Cards Against Humanity","Charades","Twister","Jackbox TV"]},
+        "Music Genre":["Classic Rock","EDM","Mumble Rap","Classical","90s Alt Rock","Pop","Jazz","Christmas"],
 
-    {"Types of Travel":["Road Trip","Cruise","All-Inclusive","Backpacking","Holiday Travel","Sailing","Business","School Trip"]},
+        "First Date":["Happy Hour Drinks","Dinner","They're Paying","Coffee","Something With Friends","Zoom","Meet at a Park","Museum"],
 
-    {"Places to Go":["Out to Get Some Cigarrettes","South America","Europe","A Park","Movie Theater","Gym / Yoga","Concert or Sporting Event","For a Walk"]},
+        "Type of Drunk":["Beer","Wine","Whiskey","Champagne","Tequila","Rum","Vodka","Mixed Drinks"],
 
-    {"Music Genre":["Classic Rock","EDM","Rap","Classical","90s Alt Rock","Pop","R&B or Jazz","Other"]},
+        "Pets":["Dogs","Cats","Birds","Lizards","Hamster","Exotic Animal","Raccoon","Rabbit"],
 
-    {"First Date":["Late Night Drinks","Dinner","Anything if They're Paying","Coffee","Happy Hour Drinks","Something Outdoors","Something With Friends","Zoom"]},
+        "Age":["Elementary School","Middle School","College","High School","Twenties","Middle Age","Old Age","Afterlife"],
 
-    {"Type of Drunk":["Beer","Wine","Gin","Whiskey","Champagne","Tequila","Rum","Vodka"]}
-        
+        "Places to Work":["Oil Rig","Foreign Language Country","Deep Sea Fishing Boat","Morgue or Cemetary","Amazon Warehouse","Local Prison","Your Old High School","Foxconn"]
+    }
 ]
