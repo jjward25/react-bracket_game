@@ -3,6 +3,8 @@ import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 import games from './bracket_list.json';
 import './newRandom.css'
+import Media from 'react-media';
+
 /* Variables from the random game and the nominees */
 const RandomGame = games[Math.floor(Math.random() * games.length)]; /*console.log(RandomGame)*/
 const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
@@ -81,7 +83,7 @@ function handleClickR2 (nominee,matchup,seed) {
 /* handleClick function for updating the Final Round winners */
 const [winnersThree,setWinnersThree] = useState(['']);
 const [winnerSeedsThree,setSeedsThree] = useState(['']);
-
+const roundOverThree = ((Object.values(winnersThree).indexOf('') > -1) === false);
 function handleClickR3 (nominee,matchup,seed) {
   const newWinnersThree = winnersThree;
   newWinnersThree[matchup] = nominee;
@@ -126,7 +128,7 @@ return (
         </div>
         <div className='game-outer-wrap'>
 
-          <div className='game-wrap'>
+          <div className={`game-wrap-${roundOver}`}>
             <div className='matchup'>
               <div className={`game-seed-${(winners[0]===GameSeeds[0])}`} onClick={() => handleClickR1(GameSeeds[0],0,seeds[0])}>
                 <div className='seed-label'>{seeds[0]}</div>
@@ -170,7 +172,7 @@ return (
           </div>
 
 
-          <div className={`game-wrap-${roundOver}`}>
+          <div className={`game-wrap-2-${roundOverTwo}`}>
             <div className='matchup'>
               <div className={`game-seed-${winnersTwo[0]===winners[0]}`} onClick={() => handleClickR2(winners[0],0,winnerSeeds[0])}>
                 <div className='seed-label'>{winnerSeeds[0]}</div>
@@ -194,7 +196,7 @@ return (
           </div>
 
 
-          <div className={`game-wrap-${roundOverTwo}`}>
+          <div className={`game-wrap-3-${roundOverThree}`}>
             <div className='matchup'>
               <div className={`game-seed-${winnersThree[0]===winnersTwo[0]}`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
                 <div className='seed-label'>{winnerSeedsTwo[0]}</div>

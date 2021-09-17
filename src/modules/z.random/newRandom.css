@@ -55,21 +55,25 @@
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: 50vh;
+    z-index: 1;
 }
-.game-wrap {
+/*Round 1 */
+.game-wrap-false, .game-wrap-true {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-width: 33%;
     padding-right: 25%;
     height: 50vh;
+    z-index: 1;
 }
 /** Round Two **/
-.game-wrap-false{
+.game-wrap-3-true{
     width: 0px;
     overflow: hidden;
+    z-index: 1;
 }
-.game-wrap-true{
+.game-wrap-2-false, .game-wrap-3-false,.game-wrap-2-true{
     display: flex;
     flex-direction: column;
     
@@ -77,6 +81,7 @@
     height: 50vh;
     min-width: 33%;
     padding-right: 25%;
+    z-index: 1;
 }
 
 /* Actual Game Cards */
@@ -110,4 +115,18 @@
     text-align: left;
 }
 
-
+/************************/
+/*** Mobile Views ***/
+/************************/
+@media (max-device-width: 787px) {
+    .game-wrap-true {
+        z-index: -2;
+        width: 0;
+    }
+    .game-wrap-2-false{
+        width: 100%;
+    }
+    .game-wrap-2-true{
+        width: 0%;
+    }
+}
