@@ -3,7 +3,6 @@ import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 import games from './bracket_list.json';
 import './newRandom.css'
-import Media from 'react-media';
 
 /* Variables from the random game and the nominees */
 const RandomGame = games[Math.floor(Math.random() * games.length)]; /*console.log(RandomGame)*/
