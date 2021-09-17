@@ -152,7 +152,6 @@
         z-index: -2;
         width: 0;
         overflow: hidden;
-        margin: -50%;
     }
     .game-wrap-2-true-false,.game-wrap-3-true-false{
         width: 100vw;
