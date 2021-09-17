@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../../images/bracket-transparent.PNG';
 import {Link} from 'react-router-dom';
 import games from './bracket_list.json';
 import './newRandom.css'
@@ -118,7 +117,7 @@ return (
               The Bracket Game
             </p>
           </Link>
-          <img src={logo} className="game-logo" alt="logo" />
+          <img src='https://i.imgur.com/qXF14ee.png' className="game-logo" alt="logo" />
           <p className='instructions'>
             Debate the best, or the worst...
           </p>
