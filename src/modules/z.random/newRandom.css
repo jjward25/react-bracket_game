@@ -152,6 +152,7 @@
         z-index: -2;
         width: 0;
         overflow: hidden;
+        opacity: 0;
     }
     .game-wrap-2-true-false,.game-wrap-3-true-false{
         width: 100vw;
@@ -161,6 +162,7 @@
         z-index: -2;
         width: 0;
         overflow: hidden;
+        opacity: 0;
     }
    
 }
