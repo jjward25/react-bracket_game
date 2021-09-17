@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-width: 33%;
+    width: 80%;
     padding-right: 25%;
     height: 60vh;
     z-index: 1;
@@ -83,10 +83,9 @@
 .game-wrap-2-true-false,.game-wrap-2-true-true{
     display: flex;
     flex-direction: column;
-    
     justify-content: space-around;align-items: center;
     height: 60vh;
-    min-width: 33%;
+    width: 80%;
     padding-right: 25%;
     z-index: 1;
 }
@@ -99,10 +98,9 @@
 .game-wrap-3-true-false,.game-wrap-3-true-true{
     display: flex;
     flex-direction: column;
-    
     justify-content: space-around;align-items: center;
     height: 60vh;
-    min-width: 33%;
+    width: 80%;
     padding-right: 25%;
     z-index: 1;
 }
@@ -153,7 +151,6 @@
         width: 0;
         overflow: hidden;
         opacity: 0;
-        min-width: none;
     }
     .game-wrap-2-true-false,.game-wrap-3-true-false{
         width: 100vw;
@@ -164,7 +161,6 @@
         width: 0;
         overflow: hidden;
         opacity: 0;
-        min-width: none;
     }
    
 }
