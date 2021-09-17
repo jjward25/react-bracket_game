@@ -144,7 +144,7 @@
 /************************/
 /*** Mobile Views ***/
 /************************/
-@media only screen and (min-width: 360px) and (max-device-width: 850px) {
+@media only screen and (min-width: 360px) and (max-width: 850px) {
     .game-wrap-false{
         width: 100vw;
     }
@@ -153,6 +153,7 @@
         width: 0;
         overflow: hidden;
         opacity: 0;
+        min-width: none;
     }
     .game-wrap-2-true-false,.game-wrap-3-true-false{
         width: 100vw;
@@ -163,6 +164,7 @@
         width: 0;
         overflow: hidden;
         opacity: 0;
+        min-width: none;
     }
    
 }
