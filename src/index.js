@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Menu from './modules/a.menu/Menu';
 import Creategame from './modules/create-form/form';
-import Random from './modules/b.random/random';
 import Choosegame from './modules/d.choose/choose';
 import NewRandom from './modules/z.random/newRandom';
 
@@ -16,13 +15,11 @@ function App() {
         <Router>
         <div className="app">
             <Switch>
-                <Route path="/" exact component={Menu} />
+                <Route path="/" exact component={NewRandom} />
+                <Route path="/home" exact component={Menu} />
 
+                <Route path="/random" component={NewRandom}/>
                 <Route path="/creategame" component ={Creategame}/>
-
-                <Route path="/random" component={Random}/>
-                <Route path="/newrandom" component={NewRandom}/>
-
                 <Route path="/choose" component={Choosegame}/>
             </Switch>
         </div>
