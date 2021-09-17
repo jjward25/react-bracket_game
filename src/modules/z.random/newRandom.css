@@ -25,28 +25,34 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    height: 50vh;
-    font-size: 125%;
+    height: 40vh;
+    font-size: 115%;
+    overflow: hidden;
 }
 .title-text{
-    margin-bottom:2.5%;
-    padding-top:2.5%;
+    padding: 0;
+    padding-top: 2.5%;
+    margin: 0 auto;
+    height: 5vh;
 }
 .game-logo{
     margin: auto;
     border-style: solid;
     border-color: black;
     max-width: 35%;
+    max-height: 20vh;
 }
 .instructions {
     color: #91b2c7;
-    font-size: 150%;
+    font-size: 115%;
     margin-bottom:2.5%;
     margin-top:2.5%;
+    max-height: 20vh;
 }
 .nominee-title{
-    font-size: 150%;
+    font-size: 125%;
     padding-bottom: 0;
+    max-height: 20vh;
 }
 
 
@@ -55,7 +61,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     z-index: 1;
 }
 /*Round 1 */
@@ -65,21 +71,37 @@
     justify-content: space-around;
     min-width: 33%;
     padding-right: 25%;
-    height: 50vh;
+    height: 60vh;
     z-index: 1;
 }
 /** Round Two **/
-.game-wrap-3-true{
+.game-wrap-2-false-false{
     width: 0px;
     overflow: hidden;
     z-index: 1;
 }
-.game-wrap-2-false, .game-wrap-3-false,.game-wrap-2-true{
+.game-wrap-2-true-false,.game-wrap-2-true-true{
     display: flex;
     flex-direction: column;
     
     justify-content: space-around;align-items: center;
-    height: 50vh;
+    height: 60vh;
+    min-width: 33%;
+    padding-right: 25%;
+    z-index: 1;
+}
+/**Round Three**/
+.game-wrap-3-false-false{
+    width: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+.game-wrap-3-true-false,.game-wrap-3-true-true{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;align-items: center;
+    height: 60vh;
     min-width: 33%;
     padding-right: 25%;
     z-index: 1;
@@ -95,6 +117,7 @@
     display: grid;
     grid-template-columns: 15% 75%;
     width: 100%;
+    min-height: 3.125vh;
 }
 .game-seed-true{
     display: grid;
@@ -102,6 +125,7 @@
     width: 100%;
     background-color:#91b2c7;
     border-radius: 10px;
+    min-height: 3.125vh;
 }
 .game-seed:hover, .game-seed-false:hover{
     background-color: #91b2c7;
@@ -114,18 +138,13 @@
 .seed-descr{
     color:white;
     text-align: left;
+    font-size: 110%;
 }
 
 /************************/
 /*** Mobile Views ***/
 /************************/
 @media screen and (max-device-width: 787px) {
-    .game-header{
-        height: 40vh;
-    }
-    .game-out-wrap{
-        height: 60vh;
-    }
     .game-wrap-false{
         width: 100vw;
     }
@@ -134,18 +153,14 @@
         width: 0;
         overflow: hidden;
     }
-    .game-wrap-2-false{
+    .game-wrap-2-true-false,.game-wrap-3-true-false{
         width: 100vw;
         z-index: 3;
     }
-    .game-wrap-2-true{
+    .game-wrap-2-true-true,.game-wrap-3-true-true{
         z-index: -2;
         width: 0;
         overflow: hidden;
     }
-    .game-wrap-3-false{
-        width: 100%;
-        width: 100vw;
-        z-index: 3;
-    }
+   
 }

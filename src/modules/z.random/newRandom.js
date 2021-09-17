@@ -112,10 +112,8 @@ return (
       <div className="vertical-center">
 
         <div className='game-header'>
-          <Link to="/">
-            <p className="title-text">
+          <Link to="/" className="title-text">
               The Bracket Game
-            </p>
           </Link>
           <img src='https://i.imgur.com/qXF14ee.png' className="game-logo" alt="logo" />
           <p className='instructions'>
@@ -125,8 +123,8 @@ return (
             {GameName}
           </div>
         </div>
-        <div className='game-outer-wrap'>
 
+        <div className='game-outer-wrap'>
           <div className={`game-wrap-${roundOver}`}>
             <div className='matchup'>
               <div className={`game-seed-${(winners[0]===GameSeeds[0])}`} onClick={() => handleClickR1(GameSeeds[0],0,seeds[0])}>
@@ -171,7 +169,7 @@ return (
           </div>
 
 
-          <div className={`game-wrap-2-${roundOverTwo}`}>
+          <div className={`game-wrap-2-${roundOver}-${roundOverTwo}`}>
             <div className='matchup'>
               <div className={`game-seed-${winnersTwo[0]===winners[0]}`} onClick={() => handleClickR2(winners[0],0,winnerSeeds[0])}>
                 <div className='seed-label'>{winnerSeeds[0]}</div>
@@ -195,7 +193,7 @@ return (
           </div>
 
 
-          <div className={`game-wrap-3-${roundOverThree}`}>
+          <div className={`game-wrap-3-${roundOverTwo}-${roundOverThree}`}>
             <div className='matchup'>
               <div className={`game-seed-${winnersThree[0]===winnersTwo[0]}`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
                 <div className='seed-label'>{winnerSeedsTwo[0]}</div>
@@ -207,8 +205,9 @@ return (
               </div>
             </div>
           </div>
-
         </div>
+
+
       </div>
     </div>
   );
