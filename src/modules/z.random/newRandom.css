@@ -113,13 +113,16 @@
 }
 .game-seed,.game-seed-false{
     display: grid;
-    grid-template-columns: 15% 75%;
+    grid-template-columns: 15% 55%;
+    padding-left: 15%;
     width: 100%;
     min-height: 3.125vh;
+    margin: auto;
 }
 .game-seed-true{
     display: grid;
-    grid-template-columns: 15% 75%;
+    grid-template-columns: 15% 55%;
+    padding-left: 15%;
     width: 100%;
     background-color:#91b2c7;
     border-radius: 10px;
@@ -143,6 +146,9 @@
 /*** Mobile Views ***/
 /************************/
 @media only screen and (max-width: 850px) {
+    .game-outer-wrap{
+        display: flex;
+    }
     .game-wrap-false{
         width: 100%;
         padding: 0;
