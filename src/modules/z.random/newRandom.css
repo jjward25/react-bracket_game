@@ -113,14 +113,14 @@
 }
 .game-seed,.game-seed-false{
     display: grid;
-    grid-template-columns: 15% 55%;
+    grid-template-columns: 20% 70%;
     width: 100%;
     min-height: 3.125vh;
     margin: auto;
 }
 .game-seed-true{
     display: grid;
-    grid-template-columns: 15% 55%;
+    grid-template-columns: 20% 70%;
     width: 100%;
     background-color:#91b2c7;
     border-radius: 10px;
