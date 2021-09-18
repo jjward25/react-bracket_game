@@ -3,8 +3,18 @@ import {Link} from 'react-router-dom';
 import games from './bracket_list.json';
 import './newRandom.css'
 
+var remainingGames = []
+if (localStorage.getItem("remainingGames") === null) {
+  localStorage.setItem("remainingGames", JSON.stringify(games));  
+  remainingGames = JSON.parse(localStorage.getItem("remainingGames"));
+} else {
+  remainingGames = JSON.parse(localStorage.getItem("remainingGames"));  
+  localStorage.setItem("remainingGames", JSON.stringify(games));
+}
+console.log(remainingGames);
+
 /* Variables from the random game and the nominees */
-const RandomGame = games[Math.floor(Math.random() * games.length)]; /*console.log(RandomGame)*/
+const RandomGame = remainingGames[Math.floor(Math.random() * remainingGames.length)]; /*console.log(RandomGame)*/
 const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
 const SeedList = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
 const seeds = ['1','8','4','5','2','7','3','6']
@@ -99,6 +109,10 @@ function NewRandom() {
     const roundOverThree = ((Object.values(winnersThree).indexOf('') > -1) === false);
     if (roundOverThree) {
       console.log('Game Complete!')
+      const newGames = remainingGames.filter(game=>(game!==RandomGame))
+      console.log('New Games:', newGames)
+      localStorage.clear()
+      localStorage.setItem("remainingGames", JSON.stringify(newGames));
       window.location.reload(false);
     }
     return
