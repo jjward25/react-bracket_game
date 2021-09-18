@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import games from './bracket_list.json';
 import './newRandom.css'
 
+
+/** Set the RemainingGames variable that gets updated at the end of each bracket */
 var remainingGames = []
 if (localStorage.getItem("remainingGames") === null) {
   localStorage.setItem("remainingGames", JSON.stringify(games));  
@@ -12,6 +14,7 @@ if (localStorage.getItem("remainingGames") === null) {
   localStorage.setItem("remainingGames", JSON.stringify(games));
 }
 console.log(remainingGames);
+console.log(remainingGames.length)
 
 /* Variables from the random game and the nominees */
 const RandomGame = remainingGames[Math.floor(Math.random() * remainingGames.length)]; /*console.log(RandomGame)*/
@@ -105,15 +108,22 @@ function NewRandom() {
       ...winnerSeedsThree,
       ...newSeedsThree
     })
-    /* Check if all matchups have a winner selected */
+    /* Check if all matchups have a winner selected, reset the list of remaining games */
     const roundOverThree = ((Object.values(winnersThree).indexOf('') > -1) === false);
     if (roundOverThree) {
       console.log('Game Complete!')
       const newGames = remainingGames.filter(game=>(game!==RandomGame))
-      console.log('New Games:', newGames)
       localStorage.clear()
       localStorage.setItem("remainingGames", JSON.stringify(newGames));
-      window.location.reload(false);
+      const AllGamesOver = newGames.length === 0;
+      if (AllGamesOver) {
+        console.log('All Games Completed!')
+        localStorage.clear()
+        window.location.reload(false);
+      } else {
+        console.log('Next Game!')
+        window.location.reload(false);
+      }
     }
     return
   }
