@@ -24,7 +24,8 @@
     background-color: black;
     color: white;
     min-width: auto;
-    width: 25%;
+    width: 50%;
+    max-width: 500px;
     text-align: center;
     font-weight: 100;
     overflow: scroll;
