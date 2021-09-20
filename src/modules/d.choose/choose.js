@@ -25,8 +25,8 @@ function Choosegame() {
             <img src={logo} className="choose-logo" alt="logo" />
             
             <ul className="choose-game-list">
-                {games.map((game) => {
-                    return <Link style= {{ textDecoration: 'none' }} to='/choosegame' className="choose-game-category-title" onClick={() => startGame(Object.keys(game)[0])}>
+                {games.map((game,index) => {
+                    return <Link key={index} style= {{ textDecoration: 'none' }} to='/choosegame' className="choose-game-category-title" onClick={() => startGame(Object.keys(game)[0])}>
                                 {Object.keys(game)[0].toUpperCase()}
                             </Link>;
                 })}
