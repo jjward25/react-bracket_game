@@ -17,7 +17,7 @@ function Choosegame() {
             <div className="choose-center">
             <Link to="/">
                 <p className="choose-title-text">
-                The Bracket Game
+                Choose a Bracket
                 </p>
             </Link>
             

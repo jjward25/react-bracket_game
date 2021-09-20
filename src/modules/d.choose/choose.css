@@ -12,7 +12,9 @@
     color: white;
 }
 .choose-logo{
-    width: 15%;
+    width: 20%;
+    max-width: 350px;
+    margin-top: 2.5%;
 }
 .choose-game-list {
     display: flex;
@@ -23,8 +25,8 @@
     background-color: black;
     color: white;
     min-width: auto;
-    width: 18%;
-    max-width: 500px;
+    width: 55%;
+    max-width: 400px;
     text-align: center;
     font-weight: 100;
     overflow: scroll;
