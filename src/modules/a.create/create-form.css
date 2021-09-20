@@ -1,0 +1,41 @@
+/** Page Wrap **/
+.create-game-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+/** Page Header **/
+.create-game-header{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 115%;
+    overflow: hidden;
+}
+.create-title-text{
+    padding: 0;
+    padding-top: 2.5%;
+    font-size: 250%;
+    font-weight: 500;
+    margin: 0 auto;
+    height: 5vh;
+    text-decoration: none;
+    color: lightgrey;
+}
+.create-game-logo{
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    max-width: 400px;
+    max-width: 50%;
+}
+.create-field {
+    color: lightgrey;
+    font-size: 250%;
+    margin-bottom:2.5%;
+    margin-top:2.5%;
+    max-height: 20vh;
+    text-align: center;
+}
