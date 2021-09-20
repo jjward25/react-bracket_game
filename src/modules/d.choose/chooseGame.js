@@ -109,7 +109,7 @@ function NewChoose() {
         <div className="vertical-center">
 
           <div className='game-header'>
-            <Link to="/" className="title-text">
+            <Link to="/" className="title-text" style={styleObj}>
                 The Bracket Game
             </Link>
             <img src='https://i.imgur.com/qXF14ee.png' className="game-logo" alt="logo" />

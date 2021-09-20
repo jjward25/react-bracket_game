@@ -35,6 +35,7 @@
     margin: 0 auto;
     height: 5vh;
     text-decoration: none;
+    color: lightgrey;
 }
 .game-logo{
     margin: auto;
@@ -44,7 +45,7 @@
     max-height: 20vh;
 }
 .instructions {
-    color: #91b2c7;
+    color: lightgrey;
     font-size: 115%;
     margin-bottom:2.5%;
     margin-top:2.5%;

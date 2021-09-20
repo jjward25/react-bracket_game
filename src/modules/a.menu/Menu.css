@@ -43,13 +43,14 @@
   text-decoration: underline solid black;
   font-size: 200%;
   margin: 0;
-  color: white;
+  color: lightgrey;
 }
 
 #mt2 {
   font-weight: bold;
   font-size: 125%;
   margin: 0;
+  color: lightgrey;
 }
 
 .menu-button {
@@ -58,7 +59,7 @@
   border-radius: 8px;
   text-decoration: underline solid black;
   background-color: black;
-  color: white;
+  color: lightgrey;
   min-width: auto;
   width: 33%;
   max-width: 33%;
