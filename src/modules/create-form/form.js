@@ -46,7 +46,7 @@ function Creategame (props) {
                     </p>
                 </Link>
 
-                <img src={logo} className="menu-logo" alt="logo" />
+                <img src={logo} className="form-logo" alt="logo" />
 
                 <p>Your Category</p>
                 <Input
