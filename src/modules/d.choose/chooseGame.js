@@ -1,41 +1,30 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import games from '../../bracket_list.json';
-import './newRandom.css'
+import './chooseGame.css'
 
-
-/** Set the RemainingGames variable that gets updated at the end of each bracket */
-var remainingGames = []
-if (localStorage.getItem("remainingGames") === null) {
-  localStorage.setItem("remainingGames", JSON.stringify(games));  
-  remainingGames = JSON.parse(localStorage.getItem("remainingGames"));
-} else {
-  remainingGames = JSON.parse(localStorage.getItem("remainingGames"));  
-  localStorage.setItem("remainingGames", JSON.stringify(games));
-}
-console.log(remainingGames.length)
-
-/* Variables from the random game and the nominees */
-const RandomGame = remainingGames[Math.floor(Math.random() * remainingGames.length)]; /*console.log(RandomGame)*/
-const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
-const SeedList = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
-const seeds = ['1','8','4','5','2','7','3','6']
-/*Shuffles the SeedList array into a new GameSeeds array to be displayed */
-function randomArrayShuffle(SeedList) {
-  var currentIndex = SeedList.length, temporaryValue, randomIndex;
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = SeedList[currentIndex];
-    SeedList[currentIndex] = SeedList[randomIndex];
-    SeedList[randomIndex] = temporaryValue;
-  }
-  return SeedList;
-}
-const GameSeeds = randomArrayShuffle(SeedList)
 
 /** Render Function **/
-function NewRandom() { 
+function NewChoose() { 
+
+  /** Set the RemainingGames variable that gets updated at the end of each bracket */
+  var chosenGame = {}
+  if (localStorage.getItem("chosenGame") === null) { 
+    chosenGame = games[Math.floor(Math.random() * games.length)]
+    console.log('1',chosenGame)
+  } else {
+    const gameName = JSON.parse(localStorage.getItem("chosenGame")); 
+    chosenGame = (games.filter((game) => Object.keys(game)[0] === gameName))[0]
+    console.log('2',chosenGame)
+    console.log(Object.keys(chosenGame)[0])
+  }
+
+  /* Variables from the random game and the nominees */
+  const RandomGame = chosenGame; /*console.log(RandomGame)*/
+  const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
+  const GameSeeds = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
+  const seeds = ['1','8','4','5','2','7','3','6']
+
 /* handleClick function for updating the Round One winners */
   const [winners,setWinners] = useState(['','','','']);
   const [winnerSeeds,setSeeds] = useState(['','','','']);
@@ -45,7 +34,6 @@ function NewRandom() {
     newWinners[matchup] = nominee;
     const newSeeds = winnerSeeds;
     newSeeds[matchup] = seed;
-    console.log(seed)
     setWinners({
       ...winners,
       ...newWinners
@@ -110,24 +98,9 @@ function NewRandom() {
     /* Check if all matchups have a winner selected, reset the list of remaining games */
     const roundOverThree = ((Object.values(winnersThree).indexOf('') > -1) === false);
     if (roundOverThree) {
-      console.log('Game Complete!')
-      const newGames = remainingGames.filter(game=>(game!==RandomGame))
       localStorage.clear()
-      localStorage.setItem("remainingGames", JSON.stringify(newGames));
-      const AllGamesOver = newGames.length === 0;
-      if (AllGamesOver) {
-        console.log('All Games Completed!')
-        localStorage.clear()
-        window.location.reload(false);
-      } else {
-        console.log('Next Game!')
-        window.location.reload(false);
-      }
     }
-    return
   }
-
-
 
   return (
       <div className="wrapper">
@@ -190,7 +163,6 @@ function NewRandom() {
               </div>
             </div>
 
-
             <div className={`game-wrap-2-${roundOver}-${roundOverTwo}`}>
               <div className='matchup'>
                 <div className={`game-seed-2`} onClick={() => handleClickR2(winners[0],0,winnerSeeds[0])}>
@@ -214,17 +186,16 @@ function NewRandom() {
               </div>
             </div>
 
-
             <div className={`game-wrap-3-${roundOverTwo}-${roundOverThree}`}>
               <div className='matchup'>
-                <div className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
+                <Link to="/choose"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
                   <div className={`seed-label-3-${winnersThree[0]===winnersTwo[0]}`}>{winnerSeedsTwo[0]}</div>
                   <div className={`seed-descr-3-${winnersThree[0]===winnersTwo[0]}`}>{winnersTwo[0]}</div>
-                </div>
-                <div className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[1],0,winnerSeedsTwo[1])}>
+                </Link>
+                <Link to="/choose"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[1],0,winnerSeedsTwo[1])}>
                   <div className={`seed-label-3-${winnersThree[0]===winnersTwo[1]}`}>{winnerSeedsTwo[1]}</div>
                   <div className={`seed-descr-3-${winnersThree[0]===winnersTwo[1]}`}>{winnersTwo[1]}</div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -233,4 +204,4 @@ function NewRandom() {
   );
 }
 
-export default NewRandom;
+export default NewChoose;
