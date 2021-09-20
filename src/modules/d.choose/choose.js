@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../images/bracket-transparent.PNG';
 import games from '../../bracket_list.json'
 import './choose.css';
 
