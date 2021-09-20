@@ -15,12 +15,12 @@
     width: 15%;
 }
 .choose-game-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin:0 auto;
     height: 100%;
     margin-top: 2.5%;
     padding: 0;
-    
     background-color: black;
     color: white;
     min-width: auto;
@@ -31,14 +31,17 @@
 }
 
 .choose-game-category-title {
-    margin: 20px; 
     list-style: none;
-    border-style:outset;
-    border-width: .05em;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     border: 1px rgb(82, 52, 13) solid;
+    width: 98%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 125%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 .choose-game-category-title:hover{
     background-color: cadetblue;

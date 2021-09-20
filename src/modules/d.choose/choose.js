@@ -18,9 +18,9 @@ return (
         <img src={logo} className="choose-logo" alt="logo" />
         
         <ul className="choose-game-list">
-                {games.map((game,index) => {
+                {games.map((game) => {
                     let game_path = '/' + Object.keys(game)[0].replace(/[^a-zA-Z ]/g, "").toLowerCase().replaceAll(" ","-")
-                    return <Link style= {{ textDecoration: 'none' }} to={game_path}><li className="choose-game-category-title" key={index} ><p>{Object.keys(game)[0].toUpperCase()}</p></li></Link>;
+                    return <Link style= {{ textDecoration: 'none' }} to={game_path} className="choose-game-category-title">{Object.keys(game)[0].toUpperCase()}</Link>;
                 })}
         </ul>
 

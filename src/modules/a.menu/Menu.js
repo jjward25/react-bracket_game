@@ -4,35 +4,44 @@ import './Menu.css';
 import {Link} from 'react-router-dom';
 
 function Menu() {
-  return (
-    <div className="menu">
-      <div className="menu-center">
 
-        <p className="menu-text" id="mt1">
-          The Bracket Game
-        </p>
+const randomColors = ['steelblue','salmon','purple']
+const styleObj = {
+  border: "1px solid",
+  borderColor: randomColors[Math.floor(Math.random()*randomColors.length)].toString()
+}
 
-        <img src={logo} className="menu-logo" alt="logo" />
-        
-        <p className="menu-text" id="mt2">
-          Select Game Type
-        </p>
+return (
+  <div className="menu">
+    <div className="menu-center">
 
-        <Link to="/random" className="menu-button">
-          <p>RANDOM</p>
-        </Link>
+     <Link to="/">
+      <p className="menu-text" id="mt1">
+        The Bracket Game
+      </p>
+    </Link>
 
-        <Link to="/creategame"  className="menu-button">
-          <p>CREATE</p>
-        </Link>
+    <img src={logo} className="menu-logo" alt="logo" />
+      
+    <p className="menu-text" id="mt2">
+      Select Game Type
+    </p>
 
-        <Link to="/choose" className="menu-button">
-          <p>CHOOSE</p>
-        </Link>               
+    <Link to="/random" className="menu-button" style={styleObj}>
+      <p>RANDOM</p>
+    </Link>
 
-      </div>
-    </div>
-  );
+    <Link to="/creategame"  className="menu-button" style={styleObj}>
+      <p>CREATE</p>
+    </Link>
+
+    <Link to="/choose" className="menu-button" style={styleObj}>
+      <p>CHOOSE</p>
+    </Link>               
+
+  </div>
+</div>
+);
 }
 
 export default Menu;
