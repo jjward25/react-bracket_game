@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../images/bracket-transparent.PNG';
 import './Menu.css';
 import {Link} from 'react-router-dom';
 
@@ -21,7 +20,7 @@ return (
       </p>
     </Link>
 
-    <img src={logo} className="menu-logo" alt="logo" />
+    <img src='https://i.imgur.com/qXF14ee.png' className="menu-logo" alt="logo" />
       
     <p className="menu-text" id="mt2">
       Select Game Type

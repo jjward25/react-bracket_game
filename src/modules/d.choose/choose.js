@@ -22,7 +22,7 @@ function Choosegame() {
                 </p>
             </Link>
             
-            <img src={logo} className="choose-logo" alt="logo" />
+            <img src='https://i.imgur.com/qXF14ee.png' className="choose-logo" alt="logo" />
             
             <ul className="choose-game-list">
                 {games.map((game,index) => {
