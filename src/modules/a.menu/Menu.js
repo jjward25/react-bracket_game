@@ -2,6 +2,12 @@ import React from 'react';
 import './Menu.css';
 import {Link} from 'react-router-dom';
 
+/*
+ <Link to="/creategame"  className="menu-button" style={styleObj}>
+      <p>CREATE</p>
+    </Link>
+*/
+
 function Menu() {
 
 const randomColors = ['steelblue','salmon','purple']
@@ -30,9 +36,7 @@ return (
       <p>RANDOM</p>
     </Link>
 
-    <Link to="/creategame"  className="menu-button" style={styleObj}>
-      <p>CREATE</p>
-    </Link>
+
 
     <Link to="/choose" className="menu-button" style={styleObj}>
       <p>CHOOSE</p>

@@ -3,7 +3,10 @@ import {Link} from 'react-router-dom';
 import games from '../../bracket_list.json';
 import './newRandom.css'
 
-
+const randomColors = ['steelblue','seagreen','darkkhaki']
+const styleObj = {
+  color: randomColors[Math.floor(Math.random()*randomColors.length)].toString()
+}
 /** Set the RemainingGames variable that gets updated at the end of each bracket */
 var remainingGames = []
 if (localStorage.getItem("remainingGames") === null) {
@@ -141,7 +144,7 @@ function NewRandom() {
             <p className='instructions'>
               Debate the best, or the worst...
             </p>
-            <div className="nominee-title">
+            <div className="nominee-title" style={styleObj}>
               {GameName}
             </div>
           </div>
