@@ -19,16 +19,17 @@
     flex-direction: column;
     margin:0 auto;
     height: 100%;
-    margin-top: 2.5%;
     padding: 0;
     background-color: black;
     color: white;
     min-width: auto;
-    width: 50%;
+    width: 18%;
     max-width: 500px;
     text-align: center;
     font-weight: 100;
     overflow: scroll;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .choose-game-category-title {
@@ -38,11 +39,11 @@
     border-radius: 8px;
     border: 1px rgb(82, 52, 13) solid;
     width: 98%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
     font-size: 125%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .choose-game-category-title:hover{
     background-color: cadetblue;
