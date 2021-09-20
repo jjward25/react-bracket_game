@@ -15,8 +15,7 @@ function App() {
         <Router>
         <div className="app">
             <Switch>
-                <Route path="/" exact component={NewRandom} />
-                <Route path="/home" exact component={Menu} />
+                <Route path="/" exact component={Menu} />
 
                 <Route path="/random" component={NewRandom}/>
                 <Route path="/creategame" component ={Creategame}/>

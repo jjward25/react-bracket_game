@@ -1,14 +1,31 @@
+.choose-game, .choose-center{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.choose-title-text{
+    font-weight: bold;
+    text-decoration: underline solid black;
+    font-size: 250%;
+    color: white;
+}
+.choose-logo{
+    width: 15%;
+}
 .choose-game-list {
     display: block;
     margin:0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    height: 100%;
+    margin-top: 2.5%;
+    padding: 0;
     
     background-color: black;
     color: white;
     min-width: auto;
-    width: 70%;
-    max-width: 70%;
+    width: 25%;
+    text-align: center;
     font-weight: 100;
     overflow: scroll;
 }
@@ -20,5 +37,10 @@
     border-width: .05em;
     color: white;
     text-decoration: none;
-    
+    border-radius: 8px;
+    border: 1px rgb(82, 52, 13) solid;
+}
+.choose-game-category-title:hover{
+    background-color: cadetblue;
+    font-weight: 800;
 }

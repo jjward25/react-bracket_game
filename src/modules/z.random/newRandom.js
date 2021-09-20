@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import games from './bracket_list.json';
+import games from '../../bracket_list.json';
 import './newRandom.css'
 
 
