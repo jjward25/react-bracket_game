@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import games from '../../bracket_list.json';
-import './chooseGame.css'
+import '../z.random/newRandom.css'
 
 const randomColors = ['steelblue','seagreen','darkkhaki']
 const styleObj = {

@@ -78,7 +78,7 @@
 /* Actual Game Cards */
 .matchup{
     width: 90%;
-    padding-left: 5%;
+    padding-left: 5%;   
 }
 .game-seed{
     display: flex;
@@ -107,6 +107,7 @@
     border: 1px solid black;
     padding-left: 1.5%;
     font-size: 100%;
+    width: 100%;
 }
 /** Round Two **/
 .game-wrap-2-false-false{
@@ -133,18 +134,22 @@
     background-color:darkmagenta;
     border: 1px black solid;
 }
+.seed-descr-2-false{
+    padding-left: 1.5%;
+}
 .seed-descr-2-false:hover{
     background-color: darkmagenta;
     border: 1px black solid;
+    padding-left: 1.5%;
 }
 .seed-descr-2-true{
     color:lightgrey;
-    text-align: left;
     font-size: 100%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     border: 1px black solid;
     background-color: darkmagenta;
+    width: 100%;
 }
 
 /**Round Three**/
@@ -159,13 +164,14 @@
     justify-content: space-around;align-items: center;
     height: 55vh;
     width: 100%;
-    padding-right: 25%;
     z-index: 1;
 }
 .game-seed-3{
     display: flex;
     width: 100%;
     min-height: 3.125vh;
+    text-decoration: none;
+    color:white
 }
 .seed-label-3-true, .seed-label-3-false{
     color:black;
@@ -175,16 +181,18 @@
 }
 .seed-descr-3-false{
     transition:  transform 1s;
+    padding-left: 1.5%;
 }
 .seed-descr-3-false:hover{
     background-color: lightgreen;
     border: 1px black solid;
     color: black;
     transform: rotate(360deg);
+    padding-left: 1.5%;
 }
 .seed-descr-3-true{
     color:lightgrey;
-    text-align: left;
+    width: 100%;
     font-size: 110%;
     padding-left: 1.5%;
     padding-right: 1.5%;
