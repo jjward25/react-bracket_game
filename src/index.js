@@ -5,10 +5,12 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Menu from './modules/a.menu/Menu';
-import Creategame from './modules/create-form/form';
+/*import Creategame from './modules/create-form/form';*/
 import Choosegame from './modules/d.choose/choose';
 import NewChoose from './modules/d.choose/chooseGame';
 import NewRandom from './modules/z.random/newRandom';
+
+/* <Route path="/creategame" component ={Creategame}/> */
 
 function App() {
 
@@ -19,8 +21,6 @@ function App() {
                 <Route path="/" exact component={Menu} />
 
                 <Route path="/random" component={NewRandom}/>
-
-                <Route path="/creategame" component ={Creategame}/>
 
                 <Route path="/choose" component={Choosegame}/>
                 <Route path="/choosegame" component={NewChoose}/>
