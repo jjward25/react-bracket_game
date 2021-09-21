@@ -50,7 +50,7 @@ function UserGame () {
                 <img src='https://i.imgur.com/qXF14ee.png' className="create-game-logo" alt="logo" />
                 <form className='create-form-wrap'>
                     <p className='create-title' style={styleObj}>
-                        What are we debating?
+                        What's the debate?
                     </p>
                     <input value={userGame.category} onChange={set('category')} className='form-input'/>
                     <div className="create-title" style={styleObj}>
