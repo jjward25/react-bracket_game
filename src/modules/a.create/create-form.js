@@ -35,7 +35,6 @@ function UserGame () {
             console.log('newobj',newObj)
             localStorage.removeItem("userGame")
             localStorage.setItem("userGame", JSON.stringify(newObj));
-            
         }
     };
 

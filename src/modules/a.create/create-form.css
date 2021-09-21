@@ -22,22 +22,25 @@ a:active {
 .create-game-header{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
 }
 .create-title-text{
-    font-weight: 500;
-    margin: 0 auto;
+    padding: 2.5%;
+    margin: 0;
+    text-align: center;
     text-decoration: none;
     color: lightgrey;
-    font-size: 5vh;
-    padding: 5%;
+    font-size: 200%;
+    font-weight: 500;
 }
 .create-game-logo{
     margin: auto;
     border-style: solid;
     border-color: black;
-    max-width: 400px;
-    width: 40%;
+    max-width: 35%;
+    max-height: 20vh;
+    margin-bottom: 2.5%;
 }
 /** Form Fields **/
 .create-form-wrap{
@@ -49,14 +52,15 @@ a:active {
 .create-title {
     color: lightgrey;
     font-size: 4vh;
-    margin-bottom:2.5%;
-    margin-top:2.5%;
+    margin-bottom:0;
+    margin-top:0;
     max-height: 20vh;
     text-align: center;
 }
 .form-wrap{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 .form-input{
     height: 4vh;
@@ -80,5 +84,5 @@ a:active {
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }

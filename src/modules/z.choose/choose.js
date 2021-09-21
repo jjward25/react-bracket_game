@@ -9,7 +9,7 @@ function Choosegame() {
     function startGame(category) {
         console.log(category)
         localStorage.setItem("chosenGame", JSON.stringify(category));
-        console.log(JSON.parse(localStorage.getItem("chosenGame")))
+        console.log('obj',JSON.parse(localStorage.getItem("chosenGame")))
     }
 
     return (

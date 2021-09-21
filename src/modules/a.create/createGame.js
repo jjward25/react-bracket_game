@@ -8,27 +8,26 @@ const styleObj = {
   color: randomColors[Math.floor(Math.random()*randomColors.length)].toString()
 }
 /** Set the RemainingGames variable that gets updated at the end of each bracket */
-var chosenGame = {}
-if (localStorage.getItem("userGame") === null) { 
-  chosenGame = games[Math.floor(Math.random() * games.length)]
-  console.log('1',chosenGame)
-} else {
-  chosenGame = JSON.parse(localStorage.getItem("userGame"));
-  console.log('2',chosenGame)
-  console.log(Object.keys(chosenGame)[0])
-}
-/* Variables from the random game and the nominees */
-const RandomGame = chosenGame; /*console.log(RandomGame)*/
-const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
-const GameSeeds = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
-console.log('GS',GameSeeds)
-console.log('GN',GameName)
-console.log('GN',RandomGame)
-const seeds = ['1','8','4','5','2','7','3','6']
 
 /** Render Function **/
 function NewCreate() { 
-  
+  var chosenGame = {}
+  if (localStorage.getItem("userGame") === null) { 
+    chosenGame = games[Math.floor(Math.random() * games.length)]
+    console.log('1',chosenGame)
+  } else {
+    chosenGame = JSON.parse(localStorage.getItem("userGame"));
+    console.log('2',chosenGame)
+    console.log(Object.keys(chosenGame)[0])
+  }
+  /* Variables from the random game and the nominees */
+  const RandomGame = chosenGame; /*console.log(RandomGame)*/
+  const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
+  const GameSeeds = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
+  console.log('GS',GameSeeds)
+  console.log('GN',GameName)
+  console.log('GN',RandomGame)
+const seeds = ['1','8','4','5','2','7','3','6']
 /* handleClick function for updating the Round One winners */
   const [winners,setWinners] = useState(['','','','']);
   const [winnerSeeds,setSeeds] = useState(['','','','']);
