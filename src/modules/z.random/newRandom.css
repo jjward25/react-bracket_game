@@ -26,16 +26,15 @@
     flex-direction: column;
     margin: 0 auto;
     height: 40vh;
-    font-size: 115%;
     overflow: hidden;
 }
 .title-text{
     padding: 0;
     padding-top: 2.5%;
     margin: 0 auto;
-    height: 5vh;
     text-decoration: none;
     color: lightgrey;
+    font-size: 125%;
 }
 .game-logo{
     margin: auto;
@@ -92,11 +91,12 @@
     text-align: end;
     background-color:cornflowerblue;
     border: 1px solid black;
+    font-size: 150%;
 }
 .seed-descr-false{
     color:lightgrey;
     text-align: left;
-    font-size: 125%;
+    font-size: 150%;
     padding-left: 1.5%;
 }
 .seed-descr-false:hover{
@@ -107,7 +107,7 @@
     background-color: cornflowerblue;
     border: 1px solid black;
     padding-left: 1.5%;
-    font-size: 125%;
+    font-size: 150%;
     width: 100%;
 }
 /** Round Two **/
@@ -135,10 +135,11 @@
     text-align: end;
     background-color:darkmagenta;
     border: 1px black solid;
+    font-size: 150%;
 }
 .seed-descr-2-false{
     padding-left: 1.5%;
-    font-size: 125%;
+    font-size: 150%;
 }
 .seed-descr-2-false:hover{
     background-color: darkmagenta;
@@ -147,7 +148,7 @@
 }
 .seed-descr-2-true{
     color:lightgrey;
-    font-size: 125%;
+    font-size: 150%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     border: 1px black solid;
@@ -185,7 +186,7 @@
 .seed-descr-3-false{
     transition:  transform 1s;
     padding-left: 1.5%;
-    font-size: 125%;
+    font-size: 150%;
 }
 .seed-descr-3-false:hover{
     background-color: lightgreen;
@@ -197,7 +198,7 @@
 .seed-descr-3-true{
     color:lightgrey;
     width: 100%;
-    font-size: 125%;
+    font-size: 150%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     border: 1px black solid;

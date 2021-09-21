@@ -24,19 +24,20 @@
 .game-header{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    height: 40vh;
-    font-size: 115%;
-    overflow: hidden;
+    margin: 0;
+    width: 100%;
 }
 .title-text{
     padding: 0;
     padding-top: 2.5%;
     margin: 0 auto;
-    height: 5vh;
+    font-size: 5vh;
+    width: 100%;
 }
 .game-logo{
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     border-style: solid;
     border-color: black;
     max-width: 35%;
@@ -90,11 +91,12 @@
     text-align: end;
     background-color:cornflowerblue;
     border: 1px solid black;
+    font-size: 150%;
 }
 .seed-descr-false{
     color:lightgrey;
     text-align: left;
-    font-size: 100%;
+    font-size: 150%;
     padding-left: 1.5%;
 }
 .seed-descr-false:hover{
@@ -105,7 +107,7 @@
     background-color: cornflowerblue;
     border: 1px solid black;
     padding-left: 1.5%;
-    font-size: 100%;
+    font-size: 150%;
 }
 /** Round Two **/
 .game-wrap-2-false-false{
@@ -131,6 +133,10 @@
     text-align: end;
     background-color:darkmagenta;
     border: 1px black solid;
+    font-size: 150%;
+}
+.seed-descr-2-false{
+    font-size: 150%;
 }
 .seed-descr-2-false:hover{
     background-color: darkmagenta;
@@ -144,6 +150,7 @@
     padding-right: 1.5%;
     border: 1px black solid;
     background-color: darkmagenta;
+    font-size: 150%;
 }
 
 /**Round Three**/
@@ -174,9 +181,11 @@
     text-align: end;
     background-color:lightgreen;
     border: 1px black solid;
+    font-size: 150%;
 }
 .seed-descr-3-false{
     transition:  transform 1s;
+    font-size: 150%;
 }
 .seed-descr-3-false:hover{
     background-color: lightgreen;
@@ -187,7 +196,7 @@
 .seed-descr-3-true{
     color:lightgrey;
     text-align: left;
-    font-size: 110%;
+    font-size: 150%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     border: 1px black solid;
@@ -200,6 +209,7 @@
 @media only screen and (max-width: 850px) {
     .game-outer-wrap{
         display: flex;
+        padding-top: 2.5vh;
     }
     .game-wrap-false{
         width: 100%;
