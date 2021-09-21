@@ -83,9 +83,10 @@
 }
 .game-seed{
     display: flex;
-    width: 100%;
     min-height: 3.125vh;
     margin: auto;  
+    white-space: nowrap;
+
 }
 .seed-label-false, .seed-label-true{
     color:lightgrey;
