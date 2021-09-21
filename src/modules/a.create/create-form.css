@@ -42,7 +42,7 @@ a:active {
     border-style: solid;
     border-color: black;
     max-width: 400px;
-    max-width: 45%;
+    max-width: 35%;
 }
 /** Form Fields **/
 .create-form-wrap{
@@ -66,8 +66,8 @@ a:active {
 .form-input{
     height: 4vh;
     font-size: 150%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 .form-submit-link{
     width: 100%;
@@ -76,7 +76,7 @@ a:active {
 }
 .form-submit{
     display: flex;
-    height: 4vh;
+    height: 3.5vh;
     font-size: 125%;
     font-weight: 600;
     width: 75%;
@@ -85,5 +85,5 @@ a:active {
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
