@@ -86,7 +86,6 @@
     min-height: 3.125vh;
     margin: auto;  
     white-space: nowrap;
-
 }
 .seed-label-false, .seed-label-true{
     color:lightgrey;
@@ -129,6 +128,7 @@
     display: flex;
     width: 100%;
     min-height: 3.125vh;
+    white-space: nowrap;
 }
 .seed-label-2-true, .seed-label-2-false{
     color: lightgrey;
@@ -173,7 +173,8 @@
     width: 100%;
     min-height: 3.125vh;
     text-decoration: none;
-    color:white
+    color:white;
+    white-space: nowrap;
 }
 .seed-label-3-true, .seed-label-3-false{
     color:black;
