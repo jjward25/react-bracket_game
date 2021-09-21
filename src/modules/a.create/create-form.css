@@ -31,11 +31,32 @@
     max-width: 400px;
     max-width: 50%;
 }
-.create-field {
+/** Form Fields **/
+.create-form-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.create-title {
     color: lightgrey;
     font-size: 250%;
     margin-bottom:2.5%;
     margin-top:2.5%;
     max-height: 20vh;
     text-align: center;
+}
+.form-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.form-input{
+    height: 4vh;
+    font-size: 150%;
+}
+.form-submit{
+    margin-top: 2.5vh;
+    height: 4vh;
+    font-size: 125%;
+    font-weight: 600;
 }

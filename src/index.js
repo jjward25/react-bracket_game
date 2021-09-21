@@ -10,6 +10,7 @@ import Choosegame from './modules/z.choose/choose';
 import NewChoose from './modules/z.choose/chooseGame';
 import NewRandom from './modules/z.random/newRandom';
 import UserGame from './modules/a.create/create-form';
+import NewCreate from './modules/a.create/createGame';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/random" component={NewRandom}/>
 
                 <Route path="/creategame" component ={UserGame}/>
+                <Route path="/usergame" component ={NewCreate}/>
 
                 <Route path="/choose" component={Choosegame}/>
                 <Route path="/choosegame" component={NewChoose}/>

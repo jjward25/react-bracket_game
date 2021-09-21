@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import games from '../../bracket_list.json';
-import '../z.random/newRandom.css'
+import './createGame.css'
 
 const randomColors = ['steelblue','seagreen','darkkhaki']
 const styleObj = {
   color: randomColors[Math.floor(Math.random()*randomColors.length)].toString()
 }
+
 /** Render Function **/
-function NewChoose() { 
+function NewCreate() { 
   /** Set the RemainingGames variable that gets updated at the end of each bracket */
   var chosenGame = {}
-  if (localStorage.getItem("chosenGame") === null) { 
+  if (localStorage.getItem("userGame") === null) { 
     chosenGame = games[Math.floor(Math.random() * games.length)]
     console.log('1',chosenGame)
   } else {
-    const gameName = JSON.parse(localStorage.getItem("chosenGame")); 
-    chosenGame = (games.filter((game) => Object.keys(game)[0] === gameName))[0]
+    chosenGame = JSON.parse(localStorage.getItem("userGame"));
     console.log('2',chosenGame)
     console.log(Object.keys(chosenGame)[0])
   }
@@ -25,6 +25,9 @@ function NewChoose() {
   const RandomGame = chosenGame; /*console.log(RandomGame)*/
   const GameName = Object.keys(RandomGame)[0]; /*console.log(GameName)*/
   const GameSeeds = Object.values(RandomGame)[0]; /*console.log(SeedList)*/
+  console.log('GS',GameSeeds)
+  console.log('GN',GameName)
+  console.log('GN',RandomGame)
   const seeds = ['1','8','4','5','2','7','3','6']
 
 /* handleClick function for updating the Round One winners */
@@ -190,11 +193,11 @@ function NewChoose() {
 
             <div className={`game-wrap-3-${roundOverTwo}-${roundOverThree}`}>
               <div className='matchup'>
-                <Link to="/choose"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
+                <Link to="/creategame"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[0],0,winnerSeedsTwo[0])}>
                   <div className={`seed-label-3-${winnersThree[0]===winnersTwo[0]}`}>{winnerSeedsTwo[0]}</div>
                   <div className={`seed-descr-3-${winnersThree[0]===winnersTwo[0]}`}>{winnersTwo[0]}</div>
                 </Link>
-                <Link to="/choose"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[1],0,winnerSeedsTwo[1])}>
+                <Link to="/creategame"  className={`game-seed-3`} onClick={() => handleClickR3(winnersTwo[1],0,winnerSeedsTwo[1])}>
                   <div className={`seed-label-3-${winnersThree[0]===winnersTwo[1]}`}>{winnerSeedsTwo[1]}</div>
                   <div className={`seed-descr-3-${winnersThree[0]===winnersTwo[1]}`}>{winnersTwo[1]}</div>
                 </Link>
@@ -206,4 +209,4 @@ function NewChoose() {
   );
 }
 
-export default NewChoose;
+export default NewCreate;
