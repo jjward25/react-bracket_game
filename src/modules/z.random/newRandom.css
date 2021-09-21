@@ -24,13 +24,13 @@
 .game-header{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     height: 40vh;
     overflow: hidden;
 }
 .title-text{
     padding: 0;
-    padding-top: 2.5%;
     margin: 0 auto;
     text-decoration: none;
     color: lightgrey;

@@ -30,14 +30,12 @@ function UserGame () {
             setUserGame(oldValues => ({...oldValues,[name]:value}));
             var newObj = {}
             const gameName = userGame.category
-            
             const newList = [userGame.seed1,userGame.seed2,userGame.seed3,userGame.seed4,userGame.seed5,userGame.seed6,userGame.seed7,userGame.seed8]
             newObj[gameName] = newList
             console.log('newobj',newObj)
-
             localStorage.removeItem("userGame")
             localStorage.setItem("userGame", JSON.stringify(newObj));
-            console.log(JSON.parse(localStorage.getItem("userGame")))
+            
         }
     };
 
