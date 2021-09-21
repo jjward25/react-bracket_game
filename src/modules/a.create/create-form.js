@@ -8,6 +8,10 @@ function UserGame () {
     const styleObj = {
       color: randomColors[Math.floor(Math.random()*randomColors.length)].toString()
     }
+    const styleObj2 = {
+        backgroundColor: randomColors[Math.floor(Math.random()*randomColors.length)].toString(),
+        textDecoration: 'none'
+      }
 
     const [userGame, setUserGame] =  useState({
         seed1: 'Seed1',
@@ -62,7 +66,7 @@ function UserGame () {
                         <input value={userGame.seed7} onChange={set('seed7')} className='form-input'/>
                         <input value={userGame.seed8} onChange={set('seed8')} className='form-input'/>
 
-                        <Link to='/usergame' className='form-submit-link'><button className='form-submit'>Submit </button></Link>
+                        <Link to='/usergame' className='form-submit-link'><button className='form-submit' style={styleObj2}>Submit </button></Link>
                     </div>
                 </form>
           </div>
