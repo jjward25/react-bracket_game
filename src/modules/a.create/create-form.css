@@ -13,7 +13,6 @@ a:active {
 
 /** Page Wrap **/
 .create-game-wrap{
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@ a:active {
     flex-direction: column;
     margin: 0 auto;
     font-size: 115%;
-    overflow: hidden;
 }
 .create-title-text{
     padding: 0;
