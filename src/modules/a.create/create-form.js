@@ -14,14 +14,14 @@ function UserGame () {
       }
 
     const [userGame, setUserGame] =  useState({
-        seed1: 'Seed1',
-        seed2: 'Seed2',
-        seed3: 'Seed3',
-        seed4: 'Seed4',
-        seed5: 'Seed5',
-        seed6: 'Seed6',
-        seed7: 'Seed7',
-        seed8: 'Seed8',
+        seed1: 'Nominee',
+        seed2: 'Nominee',
+        seed3: 'Nominee',
+        seed4: 'Nominee',
+        seed5: 'Nominee',
+        seed6: 'Nominee',
+        seed7: 'Nominee',
+        seed8: 'Nominee',
         category: 'Category'
     });
 
