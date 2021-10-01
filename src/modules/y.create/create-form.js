@@ -14,14 +14,14 @@ function UserGame () {
       }
 
     const [userGame, setUserGame] =  useState({
-        seed1: 'Nominee',
-        seed2: 'Nominee',
-        seed3: 'Nominee',
-        seed4: 'Nominee',
-        seed5: 'Nominee',
-        seed6: 'Nominee',
-        seed7: 'Nominee',
-        seed8: 'Nominee',
+        seed1: 'Seed 1',
+        seed2: 'Seed 2',
+        seed3: 'Seed 3',
+        seed4: 'Seed 4',
+        seed5: 'Seed 5',
+        seed6: 'Seed 6',
+        seed7: 'Seed 7',
+        seed8: 'Seed 8',
         category: 'Category'
     });
 
@@ -44,7 +44,7 @@ function UserGame () {
                 <Link to="/" className="create-title-text">
                     The Bracket Game
                 </Link>
-                <img src='https://i.imgur.com/qXF14ee.png' className="create-game-logo" alt="logo" />
+                <img src='https://i.imgur.com/cFmxw5t.png' className="create-game-logo" alt="logo" />
                 <form className='create-form-wrap'>
                     <p className='create-title' style={styleObj}>
                         What's the debate?

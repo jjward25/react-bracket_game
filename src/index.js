@@ -4,13 +4,13 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Menu from './modules/y.menu/Menu';
+import Menu from './modules/a.menu/Menu';
 
 import Choosegame from './modules/z.choose/choose';
 import NewChoose from './modules/z.choose/chooseGame';
-import NewRandom from './modules/z.random/newRandom';
-import UserGame from './modules/a.create/create-form';
-import NewCreate from './modules/a.create/createGame';
+import NewRandom from './modules/x.random/newRandom';
+import UserGame from './modules/y.create/create-form';
+import NewCreate from './modules/y.create/createGame';
 
 function App() {
 

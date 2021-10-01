@@ -20,7 +20,7 @@ return (
       </p>
     </Link>
 
-    <img src='https://i.imgur.com/qXF14ee.png' className="menu-logo" alt="logo" />
+    <img src='https://i.imgur.com/cFmxw5t.png' className="menu-logo" alt="logo" />
       
     <p className="menu-text" id="mt2">
       Select Game Type

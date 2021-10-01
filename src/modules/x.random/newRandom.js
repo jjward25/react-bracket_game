@@ -140,7 +140,7 @@ function NewRandom() {
             <Link to="/" className="title-text" style={styleObj}>
                 The Bracket Game
             </Link>
-            <img src='https://i.imgur.com/qXF14ee.png' className="game-logo" alt="logo" />
+            <img src='https://i.imgur.com/cFmxw5t.png' className="game-logo" alt="logo" />
             <p className='instructions'>
               Debate the best, or the worst...
             </p>

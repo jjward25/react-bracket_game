@@ -8,7 +8,10 @@
 .choose-title-text{
     font-weight: bold;
     text-decoration: underline solid black;
-    font-size: 250%;
+    font-size: 6vh;
+    font-weight: bold;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
     color: white;
 }
 .choose-logo{
@@ -30,7 +33,7 @@
     text-align: center;
     font-weight: 100;
     overflow: scroll;
-    margin-top: 5%;
+    margin-top: 2.5%;
     margin-bottom: 10%;
 }
 
