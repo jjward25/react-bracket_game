@@ -6,7 +6,7 @@
     
     {"Apartment Amenity":["An Average Roommate","Washer/Dryer","Quiet","Building Elevator","New Appliances","Recycling","Closet Space","Sunlight"]},
     
-    {"Art Form":["Poems","Paintings","Drawings","Photographs","Movies","Books","Theater","Art Has No Utility"]},
+    {"Art Form":["Poems","Paintings","Drawings","Photographs","Movies","Books","Theater","Stand Up"]},
     
     {"Cuisines":["Italian","Chinese","Thai","French","Indian","Ethiopian","Mexican","Halal"]},
     
@@ -16,7 +16,7 @@
     
     {"Government":["Anarchy","Banana Republic","Military Junta","Theocracy","Patriarchy","Hunger Games","Oligarchy","Gordon Ramsey"]},
     
-    {"Hangover":["Beer","Wine","Whiskey","Champagne","Tequila","Rum","Vodka","Mixed Drinks"]},
+    {"Hard Drinks":["Beer or 40s","Wine or Cognac","Whiskey","Champagne","Tequila","Rum","Vodka","Seltzer"]},
     
     {"Joe's":["Biden","Jonas","Mama","DiMaggio","Pesci","Stalin","of Nazareth","Rogan"]},
     
@@ -30,12 +30,14 @@
     
     {"Pro Sports":["NASCAR","Rollerderby","Competitive Eating","Track and Field","Chess","Ping Pong","Fencing","E-Sports"]},
     
-    {"Rock Structure":["Mount Rushmore","The Great Pyramid","The Grand Canyon","The Great Wall of China","Mount Everest","Volcanos","Christ the Redeemer","Taj Mahal"]},
-    
-    {"States":["Florida","Wyoming","Colorado","California","Arizona","Pennsylvania","Louisiana","Oregon"]},
+    {"Rock Structure":["Mount Rushmore","The Great Pyramid","The Grand Canyon","The Great Wall of China","Mount Everest","Volcanos","The Galapagos Islands","Taj Mahal"]},
     
     {"Types of Travel":["Road Trip","Cruise","All-Inclusive","Camping","Staycation","Sailing","Business Trip","School Trip"]},
     
-    {"Way to Kill Time":["Call Someone","Video Games","TV or Movie","Reading","The Internet","Drive Somewhere","Go for a Walk","Eat"]}
-    
+    {"American Era":["Disco","Counter-Culture","20s","Modern Times","Manifest Destiney","The Revolution","80s","1950s 'American Dream'"]},
+
+    {"TV Channel":["90s MTV","HGTV","History Channel","Discovery Channel","PBS","Animal Planet","AMC","Food Network"]},
+
+    {"Modern Invention":["Cloning","Bitcoin","Search Engines","International Space Station","Vapes","Amazon","Dominos 5-5-5 Deal","Renewable Energies"]}
+
 ]
