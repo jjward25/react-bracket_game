@@ -48,14 +48,13 @@
 .instructions {
     color: lightgrey;
     font-size: 115%;
-    margin-bottom:1%;
-    margin-top:1%;
-    max-height: 20vh;
+    height: 6vh;
+    margin: 0;
 }
 .random-nominee-title{
     font-size: 125%;
     padding-bottom: 0;
-    max-height: 20vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     margin-left: 20%;

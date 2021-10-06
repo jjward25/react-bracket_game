@@ -27,6 +27,7 @@
     justify-content: space-between;
     margin: 0 auto;
     height: 40vh;
+    width: 55%;
 }
 .title-text{
     padding: 0;
@@ -35,7 +36,6 @@
     color: lightgrey;
     font-size: 200%;
     font-weight: bold;
-    width: 55%;
     height: 8vh;
 }
 .game-logo{
@@ -43,19 +43,18 @@
     border-style: solid;
     border-color: black;
     max-width: 35%;
-    max-height: 20vh;
+    height: 20vh;
 }
 .instructions {
     color: #91b2c7;
     font-size: 115%;
-    margin-bottom:2.5%;
-    margin-top:2.5%;
-    max-height: 20vh;
+    height: 6vh;
+    margin: 0;
 }
 .nominee-title{
     font-size: 125%;
     padding-bottom: 0;
-    max-height: 20vh;
+    height: 6vh;
 }
 
 
