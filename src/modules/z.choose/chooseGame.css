@@ -35,8 +35,8 @@
     color: lightgrey;
     font-size: 200%;
     font-weight: bold;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    width: 55%;
+    height: 8vh;
 }
 .game-logo{
     margin: auto;

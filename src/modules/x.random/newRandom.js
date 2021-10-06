@@ -130,7 +130,20 @@ function NewRandom() {
     return
   }
 
-
+  function nextGame() {
+    console.log('Game Complete!')
+    const newGames = remainingGames.filter(game=>(game!==RandomGame))
+    localStorage.clear()
+    localStorage.setItem("remainingGames", JSON.stringify(newGames));
+    const AllGamesOver = newGames.length === 0;
+    if (AllGamesOver) {
+      console.log('All Games Completed!')
+      localStorage.clear()
+      window.location.reload(false);
+    } else {
+      console.log('Next Game!')
+      window.location.reload(false);
+    } }
 
   return (
       <div className="wrapper">
@@ -144,8 +157,9 @@ function NewRandom() {
             <p className='instructions'>
               Debate the best, or the worst...
             </p>
-            <div className="nominee-title" style={styleObj}>
-              {GameName}
+            <div className="random-nominee-title" style={styleObj}>
+              <div className='nominee-text'>{GameName}</div>
+              <div className='next-game' onClick={()=>nextGame()}>{'>'}</div>
             </div>
           </div>
 
