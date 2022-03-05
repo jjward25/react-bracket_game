@@ -1,11 +1,11 @@
 .menu {
-  max-height: 100%; 
-  max-width: 100%;  
+  max-height: 100%;
+  max-width: 100%;
   height: 100%;
   width: 100%;
   float: left;
-  display: flex; 
-  
+  display: flex;
+
   text-align: center;
   background-color: black;
   align-items: center;
@@ -13,22 +13,22 @@
 
   background-color: black;
   font-size: calc(10px + 2vmin);
-  color: white;  
-  
-  box-sizing:border-box;
-  -moz-box-sizing:border-box; /* Firefox */
-  -webkit-box-sizing:border-box; /* Safari */
+  color: white;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
   overflow: auto;
 }
 .menu-center {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   text-align: center;
   background-color: black;
   align-items: center;
   justify-content: space-evenly;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 #mt1 {
   font-weight: bold;
@@ -46,22 +46,21 @@
 }
 #mt2 {
   font-weight: bold;
-  font-size: 125%;
-  margin: 0;
+  font-size: 105%;
+  margin: 0 5%;
   color: lightgrey;
 }
 .menu-button {
-  display: block;
-  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
   border-radius: 8px;
   text-decoration: underline solid black;
   background-color: black;
   color: lightgrey;
   min-width: auto;
-  width: 33%;
-  max-width: 33%;
+  width: 45%;
 }
-.menu-button:hover{
+.menu-button:hover {
   background-color: cadetblue;
   font-weight: 800;
   text-decoration: underline solid cadetblue;
