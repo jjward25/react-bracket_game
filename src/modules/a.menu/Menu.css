@@ -59,6 +59,7 @@
   color: lightgrey;
   min-width: auto;
   width: 45%;
+  max-width: 350px;
 }
 .menu-button:hover {
   background-color: cadetblue;
